@@ -195,12 +195,12 @@ Capítulo 12: Reglas de "Text para Flow" (Gestión del Prompter)
 El operario o especialista en ingeniería de prompts encargado de alimentar el sistema de IA (Text para Flow) debe adherirse textual, estricta e incondicionalmente a las siguientes directrices de ejecución para salvaguardar la arquitectura del guion, la estabilidad de los servidores de generación y el orden del archivo [Instrucción de Usuario]:Cero Modificaciones: "No modifiques los prompts que te mando, mándalos así mismo y no les hagas cambios". La ingeniería semántica ya ha sido optimizada en la preproducción; la intervención del operario durante el copiado y pegado altera la matriz matemática de los descriptores.Nomenclatura Estricta de Archivos: "Cambia los nombres de los clips a las primeras 6 palabras literales del prompt proveído pegado y enviado que incluyen la numeración y los códigos de tiempo". Esta regla es vital para la sincronización inversa del editor; permite ubicar el clip visual instantáneamente dentro del timeline del audio.Tolerancia a Fallos: "No reintentes clips que hayan fallado, espera a ver si se generan primero". Saturar el motor con reintentos simultáneos degrada la calidad de renderizado general del servidor.Generación por Lotes (Batches): "Genera los clips en batches de 10". El ecosistema de producción se maneja en bloques controlados para auditar la calidad progresiva.Refrigeración del Motor: "Espera 20 segundos entre cada batch". Esta pausa técnica previene la asfixia del sistema de generación y asegura tiempos de respuesta óptimos.Coherencia Visual Perenne: "Asegúrate de mantener continuidad visual a lo largo de la historia". Si un batch de 10 clips desvía drásticamente la paleta de colores, la materialidad o la arquitectura respecto al bloque anterior, el especialista debe reportar la anomalía para ajustar la semilla, en lugar de continuar ciegamente.
 Capítulo 13: Plantilla Base y Redundancia ([MODELO_DE_IA])
 A partir del hito técnico de la Versión V32, Huellas de la Humanidad abandona el uso de motores genéricos o versiones previas para consolidar toda su creación visual sobre [MODELO_DE_IA]. Todo prompt debe redactarse en idioma inglés, conformando un único párrafo sólido sin saltos de línea, respetando un orden sintáctico algorítmicamente inalterable.
+Prohibición de Bloques de Código / Plain Text: Queda terminantemente prohibido envolver los prompts dentro de bloques de código (evitar el uso de bloques de código Markdown, formato 'plain text' o cajas de código). La IA debe entregar todos los prompts como TEXTO NORMAL y continuo, facilitando su lectura y copiado directo sin cajas de código.
 Prohibición de Voz Narrativa en Prompts: Está estrictamente prohibido incluir los diálogos, frases o el texto literal de la voz narrativa (voiceover) dentro de las instrucciones visuales enviadas al generador de video. El prompt debe contener exclusivamente descriptores de imagen, iluminación, acción física, cámara y Foley. Jamás se deben incluir las palabras que el locutor está pronunciando.
 Hiper-Detalle Explicativo y Descriptivo: Los prompts generados no pueden ser escuetos ni genéricos (ej. "a medieval battle"). La IA tiene la obligación inquebrantable de redactar instrucciones visuales densas, inmersivas y altamente detalladas. Cada prompt debe pintar el escenario de forma exhaustiva, especificando meticulosamente la materialidad, las texturas, el estado atmosférico, la incidencia de la luz, la acción física específica y el movimiento exacto de la cámara (ej. "A tight macro shot of a weathered Roman soldier's mud-caked leather armor as heavy rain streaks across his exhausted face, dramatic chiaroscuro lighting casting deep shadows, slow continuous push-in tracking shot").
-Estructura Maestra del Prompt:
-\`.Ley de Redundancia y Barrera Sonora (El Sufijo Obligatorio):
+Ley de Redundancia y Barrera Sonora (El Sufijo Obligatorio):
 Para garantizar la estética documental, evitar mutaciones hacia el 3D o la fantasía, e impedir que la IA genere murmullos acústicos, cada prompt debe finalizar cerrando matemáticamente con esta cadena literal:
-cinematic documentary realism, safe framing composition, no modern objects, no CGI look, no text, no speech..\`
+cinematic documentary realism, safe framing composition, no modern objects, no CGI look, no text, no speech.
 
 Capítulo 14: Catálogos Íntegros de Parametrización
 Con el fin de erradicar la ambigüedad que produce alucinaciones en la IA, los directores deben utilizar exclusivamente términos pertenecientes a los siguientes catálogos estandarizados para construir los bloques del prompt.
@@ -340,7 +340,7 @@ const PromptGenerator = () => {
 
   // Cargar plantilla desde LocalStorage al iniciar
   useEffect(() => {
-    const key = 'huellas_master_template_v47';
+    const key = 'huellas_master_template_v48';
     const savedTemplate = localStorage.getItem(key);
     const initialText = savedTemplate ? savedTemplate : DEFAULT_TEMPLATE.trim();
     setTemplateText(initialText);
@@ -350,7 +350,7 @@ const PromptGenerator = () => {
 
   // Guardar plantilla en LocalStorage MANUALMENTE
   const saveTemplate = () => {
-    const key = 'huellas_master_template_v47';
+    const key = 'huellas_master_template_v48';
     localStorage.setItem(key, templateText);
     alert('✅ Plantilla Base guardada con éxito.');
   };
