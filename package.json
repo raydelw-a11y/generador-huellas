@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cp dist/index.html Generador_Huellas.html && (cp dist/index.html \"$HOME/Library/Mobile Documents/com~apple~CloudDocs/Generador_Huellas.html\" 2>/dev/null || true)",
     "lint": "oxlint",
     "preview": "vite preview"
   },

@@ -136,12 +136,13 @@ INSTRUCCIÓN DE ROL: Actúa como un historiador, director de cine, y periodista 
 - Herramientas de Generación: Utiliza "banana pro" para la generación de las imágenes iniciales estáticas de cada clip. Posteriormente, emplea el modelo de video configurado en "lower priority" para darle movimiento a dichas imágenes.
 - Regla de Texto en Pantalla (Edición Manual en CapCut): El video incluye texto en pantalla breve, enigmático y contundente para cada clip. Dicho texto NO debe incluirse dentro de los prompts de generación de imagen/video (Google Flow debe recibir prompts con 'no text'). La IA debe suministrar en la entrega el texto exacto correspondiente a cada clip para ser colocado manualmente en CapCut durante el montaje posterior.
 - Estructura de Entrega Obligatoria para los 3 Clips (Clip 1 Hook de 4s, Clip 2 de 8s, Clip 3 de 8s):
-  Para cada clip, la IA debe entregar obligatoriamente:
-  1. Identificación del Clip y Selección de Cámara (Escala, Ángulo, Movimiento, Óptica).
-  2. Prompt de Imagen Inicial en inglés para 'banana pro' (cerrando con los sufijos obligatorios incluyendo 'no text').
-  3. Prompt de Movimiento de Video en inglés configurado en 'lower priority'.
-  4. Diseño Foley (audio foley sin música).
-  5. Texto en Pantalla (para agregar manualmente en CapCut).
+  Para cada uno de los 3 clips, la IA debe entregar de forma clara y estructurada:
+  1. Identificación del Clip y Selección de Cámara: Especificar el tipo de plano, angulación, movimiento de cámara y óptica seleccionados de los catálogos.
+  2. Explicación Visual del Clip: Descripción narrativa y contextual en español explicando con precisión qué ocurre en la escena, qué acción física o acontecimiento se desenvuelve y cuál es la atmósfera psicológica que transmite el plano.
+  3. Prompt de Imagen Inicial: En idioma inglés para 'banana pro' (con sufijos obligatorios y 'no text').
+  4. Prompt de Movimiento de Video: En idioma inglés configurado en 'lower priority'.
+  5. Diseño Foley: Descripción del audio foley acústico y envolvente (sin música).
+  6. Texto en Pantalla: Texto corto y contundente para agregar manualmente en CapCut durante el montaje.
 - Tipos de Cámara a Utilizar (Escoge dependiendo de la historia y las escenas):
   1. ESCALA Y ENCUADRE (DISTANCIA PSICOLÓGICA):
   - Gran Plano General / Plano Panorámico: Despoja al ser humano de su agencia y lo convierte en una silueta devorada por el entorno. Transmite asombro melancólico, soledad absoluta e insignificancia ante la inmensidad del tiempo, la geografía o la arquitectura industrial.
@@ -339,7 +340,7 @@ const PromptGenerator = () => {
 
   // Cargar plantilla desde LocalStorage al iniciar
   useEffect(() => {
-    const key = 'huellas_master_template_v46';
+    const key = 'huellas_master_template_v47';
     const savedTemplate = localStorage.getItem(key);
     const initialText = savedTemplate ? savedTemplate : DEFAULT_TEMPLATE.trim();
     setTemplateText(initialText);
@@ -349,7 +350,7 @@ const PromptGenerator = () => {
 
   // Guardar plantilla en LocalStorage MANUALMENTE
   const saveTemplate = () => {
-    const key = 'huellas_master_template_v46';
+    const key = 'huellas_master_template_v47';
     localStorage.setItem(key, templateText);
     alert('✅ Plantilla Base guardada con éxito.');
   };
