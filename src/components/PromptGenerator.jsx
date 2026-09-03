@@ -330,6 +330,7 @@ Este Manual Maestro de Producción no es un compendio de sugerencias; es el cód
 
 const PromptGenerator = () => {
   const [activeTab, setActiveTab] = useState('generator');
+  const [theme, setTheme] = useState(() => localStorage.getItem('huellas_theme') || 'dark');
   
   // History State for Undo/Redo
   const [history, setHistory] = useState([]);
@@ -338,9 +339,19 @@ const PromptGenerator = () => {
   
   const [formData, setFormData] = useState({});
 
+  // Sincronizar tema con el DOM
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('huellas_theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
+  };
+
   // Cargar plantilla desde LocalStorage al iniciar
   useEffect(() => {
-    const key = 'huellas_master_template_v49';
+    const key = 'huellas_master_template_v50';
     const savedTemplate = localStorage.getItem(key);
     const initialText = savedTemplate ? savedTemplate : DEFAULT_TEMPLATE.trim();
     setTemplateText(initialText);
@@ -350,7 +361,7 @@ const PromptGenerator = () => {
 
   // Guardar plantilla en LocalStorage MANUALMENTE
   const saveTemplate = () => {
-    const key = 'huellas_master_template_v49';
+    const key = 'huellas_master_template_v50';
     localStorage.setItem(key, templateText);
     alert('✅ Plantilla Base guardada con éxito.');
   };
@@ -666,6 +677,13 @@ const PromptGenerator = () => {
             <h1>Huellas de la Humanidad</h1>
             <p>Motor de Plantillas Maestro</p>
           </div>
+          <button 
+            className="theme-toggle-btn"
+            onClick={toggleTheme}
+            title="Cambiar entre modo claro y oscuro"
+          >
+            {theme === 'dark' ? '☀️ Claro' : '🌙 Oscuro'}
+          </button>
         </div>
 
         <div className="tabs" style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem' }}>
@@ -818,8 +836,8 @@ const PromptGenerator = () => {
         </div>
         <button className="btn btn-secondary" style={{ marginBottom: '1rem', flexShrink: 0 }} onClick={copyToClipboard}>Copiar al Portapapeles</button>
         <div style={{ display: 'flex', gap: '0.5rem', flexShrink: 0 }}>
-          <button className="btn" style={{ backgroundColor: '#2a2218', color: '#f5eedc', flexGrow: 1 }} onClick={downloadDoc}>📄 Descarga Rápida</button>
-          <button className="btn" style={{ backgroundColor: '#3e3224', color: '#f5eedc', flexGrow: 1 }} onClick={downloadDocAs}>📁 Descargar en...</button>
+          <button className="btn" style={{ flexGrow: 1 }} onClick={downloadDoc}>📄 Descarga Rápida</button>
+          <button className="btn btn-secondary" style={{ flexGrow: 1 }} onClick={downloadDocAs}>📁 Descargar en...</button>
         </div>
       </div>
     </div>
