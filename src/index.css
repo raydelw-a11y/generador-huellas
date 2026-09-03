@@ -139,7 +139,22 @@ code {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: all 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .brand-header h1 {
+    font-size: 1.4rem;
+  }
+  .brand-header p {
+    font-size: 0.85rem;
+  }
+  .theme-toggle-btn {
+    padding: 0.3rem 0.65rem;
+    font-size: 0.75rem;
+  }
 }
 
 .theme-toggle-btn:hover {
