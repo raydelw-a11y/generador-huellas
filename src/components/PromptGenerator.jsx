@@ -140,9 +140,8 @@ INSTRUCCIÓN DE ROL: Actúa como un historiador, director de cine, y periodista 
   1. Identificación del Clip y Selección de Cámara: Especificar el tipo de plano, angulación, movimiento de cámara y óptica seleccionados de los catálogos.
   2. Explicación Visual del Clip: Descripción narrativa y contextual en español explicando con precisión qué ocurre en la escena, qué acción física o acontecimiento se desenvuelve y cuál es la atmósfera psicológica que transmite el plano.
   3. Prompt de Imagen Inicial: En idioma inglés para 'banana pro' (con sufijos obligatorios y 'no text').
-  4. Prompt de Movimiento de Video: En idioma inglés optimizado para el modelo de video 'omni flash'.
-  5. Diseño Foley: Descripción del audio foley acústico y envolvente (sin música).
-  6. Texto en Pantalla: Texto corto y contundente para agregar manualmente en CapCut durante el montaje.
+  4. Prompt de Movimiento de Video (con Audio Foley Integrado): En idioma inglés optimizado para el modelo 'omni flash', integrando obligatoriamente dentro del propio prompt de video la descripción acústica del Foley y sonido ambiental (ej. 'ambient sound of howling cold wind, creaking wood, muffled distant footsteps, no music, no speech').
+  5. Texto en Pantalla: Texto corto y contundente para agregar manualmente en CapCut durante el montaje.
 - Tipos de Cámara a Utilizar (Escoge dependiendo de la historia y las escenas):
   1. ESCALA Y ENCUADRE (DISTANCIA PSICOLÓGICA):
   - Gran Plano General / Plano Panorámico: Despoja al ser humano de su agencia y lo convierte en una silueta devorada por el entorno. Transmite asombro melancólico, soledad absoluta e insignificancia ante la inmensidad del tiempo, la geografía o la arquitectura industrial.
@@ -196,7 +195,8 @@ El operario o especialista en ingeniería de prompts encargado de alimentar el s
 Capítulo 13: Plantilla Base y Redundancia (omni flash / [MODELO_DE_IA])
 A partir del hito técnico de la Versión V32, Huellas de la Humanidad abandona el uso de motores genéricos o versiones previas para consolidar toda su creación de movimiento y generación visual sobre el modelo de video omni flash (o [MODELO_DE_IA] si se especifica otro). Todo prompt debe redactarse en idioma inglés, conformando un único párrafo sólido sin saltos de línea, respetando un orden sintáctico algorítmicamente inalterable.
 Prohibición de Bloques de Código / Plain Text: Queda terminantemente prohibido envolver los prompts dentro de bloques de código (evitar el uso de bloques de código Markdown, formato 'plain text' o cajas de código). La IA debe entregar todos los prompts como TEXTO NORMAL y continuo, facilitando su lectura y copiado directo sin cajas de código.
-Prohibición de Voz Narrativa en Prompts: Está estrictamente prohibido incluir los diálogos, frases o el texto literal de la voz narrativa (voiceover) dentro de las instrucciones visuales enviadas al generador de video. El prompt debe contener exclusivamente descriptores de imagen, iluminación, acción física, cámara y Foley. Jamás se deben incluir las palabras que el locutor está pronunciando.
+Prohibición de Voz Narrativa en Prompts: Está estrictamente prohibido incluir los diálogos, frases o el texto literal de la voz narrativa (voiceover) dentro de las instrucciones visuales enviadas al generador de video. Jamás se deben incluir las palabras que el locutor está pronunciando.
+Integración de Audio Foley dentro del Prompt: La descripción acústica y sensorial de los efectos de sonido (Foley) debe quedar redactada e integrada directamente dentro del propio texto del prompt de video en idioma inglés, detallando los sonidos ambientales, acústica del entorno y texturas sonoras de la escena (ej. 'ambient sound of heavy wind, muffled impacts, creaking floorboards, no music, no speech').
 Hiper-Detalle Explicativo y Descriptivo: Los prompts generados no pueden ser escuetos ni genéricos (ej. "a medieval battle"). La IA tiene la obligación inquebrantable de redactar instrucciones visuales densas, inmersivas y altamente detalladas. Cada prompt debe pintar el escenario de forma exhaustiva, especificando meticulosamente la materialidad, las texturas, el estado atmosférico, la incidencia de la luz, la acción física específica y el movimiento exacto de la cámara (ej. "A tight macro shot of a weathered Roman soldier's mud-caked leather armor as heavy rain streaks across his exhausted face, dramatic chiaroscuro lighting casting deep shadows, slow continuous push-in tracking shot").
 Ley de Redundancia y Barrera Sonora (El Sufijo Obligatorio):
 Para garantizar la estética documental, evitar mutaciones hacia el 3D o la fantasía, e impedir que la IA genere murmullos acústicos, cada prompt debe finalizar cerrando matemáticamente con esta cadena literal:
@@ -351,7 +351,7 @@ const PromptGenerator = () => {
 
   // Cargar plantilla desde LocalStorage al iniciar
   useEffect(() => {
-    const key = 'huellas_master_template_v50';
+    const key = 'huellas_master_template_v51';
     const savedTemplate = localStorage.getItem(key);
     const initialText = savedTemplate ? savedTemplate : DEFAULT_TEMPLATE.trim();
     setTemplateText(initialText);
@@ -361,7 +361,7 @@ const PromptGenerator = () => {
 
   // Guardar plantilla en LocalStorage MANUALMENTE
   const saveTemplate = () => {
-    const key = 'huellas_master_template_v50';
+    const key = 'huellas_master_template_v51';
     localStorage.setItem(key, templateText);
     alert('✅ Plantilla Base guardada con éxito.');
   };
