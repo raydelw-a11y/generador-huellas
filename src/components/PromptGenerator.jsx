@@ -6,8 +6,11 @@ const DEFAULT_TEMPLATE = `
 INSTRUCCIÓN OBLIGATORIA PARA LA IA: Has recibido el Manual Maestro completo con todas las bifurcaciones. Antes de redactar cualquier guion o tomar decisiones, DEBES PREGUNTAR AL USUARIO qué "Tipo de Producción" (ej. Principal 16:9, Inmersivo Contemplativo, Reels 9:16, Reels 16s Contemplativo, Timelapse) desea generar para este episodio. No comiences a escribir hasta que el usuario te indique el formato elegido.
 [/?TIPO_PRODUCCION]
 [?TIPO_PRODUCCION=INMERSIVO_CONTEMPLATIVO]
-INSTRUCCIÓN OBLIGATORIA PREVIA PARA LA IA (INMERSIVO CONTEMPLATIVO):
-Antes de generar los prompts de video, la metadata y la estructura final, la IA DEBE PREGUNTAR OBLIGATORIAMENTE AL USUARIO qué tipo de video será este episodio. Preséntale las siguientes opciones y dale la oportunidad de elegir una o sugerir otras:
+PROTOCOLO SECUENCIAL DE EJECUCIÓN OBLIGATORIO (EN 3 ETAPAS POR SEPARADO):
+La IA debe ejecutar obligatoriamente la producción en tres etapas separadas y secuenciales:
+
+ETAPA 1: SELECCIÓN DEL TEMA Y TIPOLOGÍA
+Antes de redactar cualquier prompt, clip o metadata, la IA DEBE PREGUNTAR OBLIGATORIAMENTE AL USUARIO qué tipo de video será este episodio. Preséntale las siguientes opciones y dale la oportunidad de elegir una o sugerir otras:
 1. Un suceso
 2. Un personaje
 3. Un misterio sin resolver
@@ -16,8 +19,28 @@ Antes de generar los prompts de video, la metadata y la estructura final, la IA 
 6. Una manipulación psicológica
 7. Una curiosidad
 8. O sugerir otras opciones creativas según la temática.
+-> ALTO INQUEBRANTABLE: La IA debe detenerse aquí y esperar la respuesta del usuario con el tema y la tipología seleccionada. No generes ningún clip ni metadata hasta recibir esta confirmación.
 
-NO comiences a redactar los prompts ni el contenido hasta que el usuario te haya respondido con el tipo de video seleccionado.
+ETAPA 2: GENERACIÓN DE LOS CLIPS DE VIDEO (PROMPTS Y DIRECCIÓN)
+Una vez que el usuario confirme el tema y la tipología, la IA generará y entregará EXCLUSIVAMENTE los 3 clips de video (Clip 1 Hook de 4s, Clip 2 de 8s, Clip 3 de 8s), conteniendo para cada clip:
+1. Identificación del Clip y Selección de Cámara (plano, ángulo, movimiento, lente).
+2. Explicación Visual del Clip (contexto narrativo en español).
+3. Prompt de Imagen Inicial (en inglés para Banana Pro con 'no text').
+4. Prompt de Movimiento de Video con Audio Foley Integrado (en inglés para Omni Flash, integrando el diseño foley acústico dentro del prompt).
+5. Texto en Pantalla (para colocar manualmente en CapCut).
+-> ALTO: La IA entrega los clips y concluye su respuesta. NO incluyas la metadata de publicación en esta etapa.
+
+ETAPA 3: GENERACIÓN DE METADATA PARA SUBIR EL VIDEO (ENTREGA POSTERIOR)
+En una interacción posterior, la IA generará la metadata de publicación en formato "Todo Corrido" y SIN encabezados de sección (cero "Título:", cero "Descripción:", cero "Comentario Fijado:"):
+- Título inmersivo directo (sin sufijos de marca ni de IA).
+- Línea invisible (⠀)
+- Descripción densa e histórica de aproximadamente 2100 caracteres.
+- Línea invisible (⠀)
+- Exactamente 5 hashtags en formato #CamelCase.
+- Línea invisible (⠀)
+- Leyenda obligatoria del Escudo de IA.
+- Línea invisible (⠀)
+- Comentario fijado directo (CTA de suscripción/interacción).
 [/?TIPO_PRODUCCION]
 ### FICHA TÉCNICA DEL EPISODIO ###
 INSTRUCCIONES PARA EL EPISODIO ACTUAL:
@@ -76,8 +99,8 @@ El Formato B rompe deliberadamente la cuarta pared temporal. Está diseñado par
 VOLUMEN III: REGLAS ESTRICTAS E INQUEBRANTABLES
 La preservación del rigor, la seguridad algorítmica y la calidad inmersiva exigen el cumplimiento de reglas prohibitivas que no admiten interpretación. Cualquier desviación de este marco invalida automáticamente el clip o el guion generado.
 Capítulo 7: Seguridad de Personajes y Lenguaje Narrativo
-Prohibición Absoluta de Menores: Está terminantemente prohibido incluir niños, bebés, adolescentes o cualquier figura de un menor de edad en toda la cadena de producción. Esta restricción aplica al guion narrativo, a los personajes secundarios o de fondo, a los prompts de generación de video y a las miniaturas de YouTube. Si la escena histórica (como un mercado o un asedio) normalmente implicaría la presencia de menores, estos deben ser completamente omitidos. La reconstrucción de la vida y el drama histórico debe focalizarse de manera exclusiva en la demografía adulta: soldados, ancianos, artesanos, comerciantes y trabajadores.
-Cero Redundancia de la Palabra "Adulto": Aunque la regla anterior exige la omisión de menores, los guionistas y especialistas en ingeniería de prompts tienen estrictamente prohibido redundar constantemente utilizando la palabra "adulto" en las descripciones (ej. evitar "un hombre adulto camina hacia una mujer adulta"). La naturaleza adulta de los personajes debe quedar implícita a través del uso de sustantivos profesionales, roles sociales o descriptores físicos apropiados.
+Prohibición Absoluta de Menores: Está terminantemente prohibido incluir niños, bebés, adolescentes o cualquier figura de un menor de edad en toda la cadena de producción. Esta restricción aplica al guion narrativo, a los personajes secundarios o de fondo, a los prompts de generación de video y a las miniaturas de YouTube. Si la escena histórica normalmente implicaría la presencia de menores, estos deben ser completamente omitidos. La reconstrucción de la vida y el drama histórico debe focalizarse de manera exclusiva en soldados, ancianos, artesanos, comerciantes y trabajadores.
+Prohibición Total de la Palabra "Adulto": Queda terminantemente prohibido escribir las palabras "adulto", "adultos", "adult", "adults" en cualquier guion, descripción o prompt. Es redundante, innecesario y antiestético. La identidad y presencia de los personajes debe expresarse únicamente a través de sus oficios, roles o descripciones contextuales (ej. soldado, campesino, mujer, hombre, pescador, herrero, monje), sin etiquetarlos jamás como "adultos".
 Prohibición de Lenguaje Violento Explícito: Por políticas estrictas de monetización algorítmica, queda terminantemente prohibido utilizar en los guiones palabras como "matar", "asesinar", "suicidar", "masacrar" o sus derivados. Para describir bajas históricas, la IA está obligada a utilizar eufemismos y lenguaje periodístico refinado (ej. "perdió la vida", "cayó en combate", "fue ejecutado", "pereció", "silenciado", "erradicado").
 [?TIPO_PRODUCCION=PRINCIPAL_16_9|REELS_9_16|TIMELAPSE]
 Regla de Cero Exclamaciones para el Motor TTS: En la redacción del guion final que será procesado por sistemas de Text-To-Speech (TTS) o interpretado por locutores, está totalmente prohibido el uso de signos de exclamación (!). La intensidad emocional, el drama y la urgencia de la historia no deben forzarse mediante gritos artificiales o entonaciones hiperbólicas. La gravedad narrativa se controla de forma exclusiva a través de la sobriedad vocal, el ritmo de lectura, la contención emocional, los silencios estructurales y el peso intrínseco de las palabras elegidas. La voz debe transmitir autoridad sin arrogancia y asombro sin melodrama.
@@ -279,7 +302,7 @@ VOLUMEN VII: EMPAQUE, SEO Y DISTRIBUCIÓN ALGORÍTMICA
 Capítulo 17: Arquitectura del Empaque (YouTube / Redes)
 La publicación del episodio requiere una estrategia algorítmica tan precisa como su creación visual, orientada a dominar el CTR (Click-Through Rate) y la retención profunda.1. Dirección de Arte para Miniaturas:
 La miniatura funciona como un ancla psicológica pre-inmersiva, no como un fotograma pasivo.Debe inyectar una emoción dominante evidente y una contradicción visual que desestabilice las expectativas (ej. un monarca rodeado de miseria extrema).El texto impreso en la miniatura debe ser brutalmente conciso: un máximo inquebrantable de 1 a 3 palabras.Bajo ningún concepto el texto de la miniatura debe repetir el título del video; su función es complementarlo semánticamente.Toda la composición debe evaluarse reduciendo su tamaño a la escala de una pantalla móvil para asegurar legibilidad.En contextos históricos densos, la miniatura debe emplear el lugar y el año como ancla de autoridad.
-2. Estrategia del Título y Subtítulos ("Todo Corrido"):
+2. Estrategia de la Metadata ("Todo Corrido" Sin Encabezados):
 Regla del Título (Cero Menciones IA): Al proponer el título del video, queda terminantemente prohibido utilizar el sufijo "(Reconstrucción con IA)" o similares.
 [?TIPO_PRODUCCION=PRINCIPAL_16_9]
 Todo título generado para documentales horizontales debe finalizar obligatoriamente con el sufijo " | Documental Completo".
@@ -287,14 +310,14 @@ Todo título generado para documentales horizontales debe finalizar obligatoriam
 [?TIPO_PRODUCCION=REELS_9_16|TIMELAPSE|REELS_16_SEG]
 Los títulos para videos verticales y promocionales deben finalizar con un separador vertical "|" seguido de una palabra o frase muy corta y referente al tema (ej. " | Historia", " | Roma", " | Misterio"). Queda estrictamente prohibido utilizar "(Reconstrucción con IA)".
 [/?TIPO_PRODUCCION]
-El algoritmo de las plataformas prioriza descripciones que fluyen como ensayos estructurados. Regla de Subtítulos (Ocultación Total): Elimina de forma absoluta todos los subtítulos genéricos y de sección ("Descripción:", "Hashtags:", "Tags:", "Comentario Fijado:", etc.). El único subtítulo permitido al inicio del documento es "Título". La redacción de la metadata debe aplicar el sistema "Todo Corrido": un flujo continuo y orgánico. Para separar cada párrafo lógico, sección o bloque de metadata, se debe dejar una línea en blanco utilizando obligatoriamente el carácter de espacio invisible braille (⠀) para forzar el salto de línea en las plataformas.
+Prohibición Absoluta de Encabezados y Subtítulos de Sección: Elimina de forma absoluta TODOS los encabezados, etiquetas y subtítulos de sección (Queda terminantemente prohibido escribir "Título:", "Descripción:", "Hashtags:", "Comentario Fijado:", etc.). Ningún texto debe llevar una etiqueta identificativa antes de su contenido. La redacción de la metadata debe aplicar el sistema "Todo Corrido": un flujo limpio, continuo y orgánico. Para separar cada bloque lógico de metadata, se debe dejar una línea en blanco utilizando obligatoriamente el carácter de espacio invisible braille (⠀) para forzar el salto de línea en las plataformas.
 [?TIPO_PRODUCCION=REELS_16_SEG|INMERSIVO_CONTEMPLATIVO]
 Regla de Descripción Larga (Retención Textual): Al carecer de voz en off, el texto de la descripción asume el peso narrativo. La descripción (metadata) generada debe ser densa, rica en contexto histórico y tener una extensión estricta de aproximadamente 2100 caracteres.
 [/?TIPO_PRODUCCION]
 
 Regla de Capítulos según Destino de Publicación:
 [?TIPO_PRODUCCION=PRINCIPAL_16_9]
-- Exclusivo para YouTube (Video Largo): Se permite y exige el subtítulo "Capítulos" para los timestamps. Esta sección debe contener exactamente 10 capítulos obligatorios.
+- Exclusivo para YouTube (Video Largo): Se permite y exige la inclusión de los timestamps de los capítulos. Esta sección debe contener exactamente 10 capítulos obligatorios.
 [/?TIPO_PRODUCCION]
 [?TIPO_PRODUCCION=REELS_9_16|TIMELAPSE|REELS_16_SEG|INMERSIVO_CONTEMPLATIVO]
 - Para Videos Cortos / Reels / Otras Redes: NO se necesita ni se debe incluir la sección de Capítulos. Omitir por completo los timestamps.
@@ -310,19 +333,18 @@ Como medida de protección comunitaria frente a detractores y políticas de revi
 (Nota: Este video inmersivo ha sido recreado utilizando herramientas de inteligencia artificial generativa basándonos estrictamente en registros históricos, tácticos y arquitectónicos de la época. Es posible que existan incongruencias o errores visuales).
 [/?TIPO_PRODUCCION]
 
-4. Hashtags, Tags y Comentario Fijado (Orden Estricto):
+4. Hashtags y Comentario Fijado (Orden Estricto):
 [?TIPO_PRODUCCION=PRINCIPAL_16_9]
 Límite Estricto de Hashtags (Horizontales): La descripción principal concluirá con exactamente 5 hashtags (en español, formato #CamelCase), ni uno más, ni uno menos. Los dos primeros hashtags son obligatorios e inamovibles: #DocumentalEnEspañol y #AmantesDeLaHistoria. Los otros 3 hashtags deben ser creados referentes al tema específico del video.
 [/?TIPO_PRODUCCION]
 [?TIPO_PRODUCCION=REELS_9_16|TIMELAPSE|REELS_16_SEG|INMERSIVO_CONTEMPLATIVO]
 Límite Estricto de Hashtags (Verticales/Promocionales/Reels): La descripción principal concluirá con exactamente 5 hashtags (en español, formato #CamelCase) referentes al tema del video, ni uno más, ni uno menos.
 [/?TIPO_PRODUCCION]
-Regla de Tags (Cajón Oculto): Los tags van a continuación de los hashtags. Ninguna palabra que ya haya sido empleada en el Título o en la Descripción debe aparecer duplicada aquí. El investigador SEO debe extraer sinónimos de nicho profundo y términos de cola larga que no fueron mencionados textualmente.
-Comentario Fijado: El Comentario Fijado (CTA y enlaces) es obligatoriamente lo último que debe aparecer en la estructura del documento del empaque, cerrando la entrega.
+Comentario Fijado: El Comentario Fijado (CTA y enlaces) es obligatoriamente lo último que debe aparecer en la estructura del documento del empaque, cerrando la entrega (sin la palabra "Comentario Fijado:", solo el texto directo del mensaje).
 
 VOLUMEN VIII: AUDITORÍA DE ÉLITE Y CONTROL DE CALIDAD
 Capítulo 18: Checklist de Control de Calidad Final (QA)
-La publicación de un documento de Huellas de la Humanidad es irreversible. Antes de presionar el botón de exportación y programar el video en la plataforma, el Director Ejecutivo, el Editor o el Arquitecto de Sistemas Audiovisuales debe confrontar el metraje final contra el siguiente escrutinio inflexible. Un solo fallo en este checklist implica la retención del episodio y la re-ingeniería del bloque defectuoso :[ ] 1. Contradicción Central: ¿La tensión histórica o paradoja planteada en el inicio permea de manera constante hasta la resolución del documental?[ ] 2. Promesa Narrativa: ¿El enigma, revelación o experiencia prometida antes del minuto 02:00 fue resuelta y entregada plenamente al espectador?[ ] 3. Filtro de Realidad (Anacronismos): ¿Se ha auditado visualmente cada plano para garantizar la inexistencia total de prendas, objetos de cristal moderno, arquitectura incoherente o tecnología anacrónica?[ ] 4. Auditoría Anti-Estancamiento (Planos): ¿Se ha verificado que ningún tipo de plano (ej. Drone reveal) se repita idénticamente en el rango cercano de los últimos 6 a 8 clips?[ ] 5. Auditoría Anti-Estancamiento (Cámara): ¿Se ha constatado que el mismo movimiento de cámara no se encadena consecutivamente sin una justificación narrativa extrema?[ ] 6. Continuidad Ambiental: ¿Las transiciones entre clips mantienen una coherencia impecable en el uso del catálogo de iluminación, la materialidad de las ruinas y la textura del espacio?[ ] 7. Sinergia de Miniatura: ¿La miniatura gráfica proyecta una emoción dominante que intriga y que es complementaria (jamás repetitiva) respecto al título del video?[ ] 8. SEO de Precisión: ¿Los tags ocultos han sido curados para evitar la duplicación de cualquier término ya escrito en el título y en el cuerpo de la descripción?[ ] 9. Contención de Hashtags: ¿El bloque final de la descripción contiene un recuento estricto y exacto de cinco (5) hashtags?[ ] 10. Formato "Todo Corrido": ¿La descripción de la plataforma fluye orgánicamente sin el uso de subtítulos burocráticos, separada únicamente por una línea de retorno de carro entre párrafos?[ ] 11. Acoplamiento del Eslogan: ¿La pronunciación final del lema de la marca coincide milimétricamente con un plano de hipertextura que muestre una huella, rastro o marca física en un material histórico?[ ] 12. Sincronización Inversa Perfecta: ¿La cadencia de la locución humana (112-114 WPM) concuerda rítmicamente con los impactos visuales, y los silencios estructurales de 2 segundos han sido respetados para permitir la decantación emocional?
+La publicación de un documento de Huellas de la Humanidad es irreversible. Antes de presionar el botón de exportación y programar el video en la plataforma, el Director Ejecutivo, el Editor o el Arquitecto de Sistemas Audiovisuales debe confrontar el metraje final contra el siguiente escrutinio inflexible. Un solo fallo en este checklist implica la retención del episodio y la re-ingeniería del bloque defectuoso :[ ] 1. Contradicción Central: ¿La tensión histórica o paradoja planteada en el inicio permea de manera constante hasta la resolución del documental?[ ] 2. Promesa Narrativa: ¿El enigma, revelación o experiencia prometida antes del minuto 02:00 fue resuelta y entregada plenamente al espectador?[ ] 3. Filtro de Realidad (Anacronismos): ¿Se ha auditado visualmente cada plano para garantizar la inexistencia total de prendas, objetos de cristal moderno, arquitectura incoherente o tecnología anacrónica?[ ] 4. Auditoría Anti-Estancamiento (Planos): ¿Se ha verificado que ningún tipo de plano (ej. Drone reveal) se repita idénticamente en el rango cercano de los últimos 6 a 8 clips?[ ] 5. Auditoría Anti-Estancamiento (Cámara): ¿Se ha constatado que el mismo movimiento de cámara no se encadena consecutivamente sin una justificación narrativa extrema?[ ] 6. Continuidad Ambiental: ¿Las transiciones entre clips mantienen una coherencia impecable en el uso del catálogo de iluminación, la materialidad de las ruinas y la textura del espacio?[ ] 7. Sinergia de Miniatura: ¿La miniatura gráfica proyecta una emoción dominante que intriga y que es complementaria (jamás repetitiva) respecto al título del video?[ ] 8. Contención de Hashtags: ¿El bloque final de la descripción contiene un recuento estricto y exacto de cinco (5) hashtags?[ ] 9. Formato "Todo Corrido": ¿La descripción de la plataforma fluye orgánicamente sin el uso de subtítulos burocráticos ni encabezados ("Título:", "Descripción:"), separada únicamente por una línea de retorno de carro con braille (⠀) entre bloques?[ ] 10. Acoplamiento del Eslogan: ¿La pronunciación final del lema de la marca coincide milimétricamente con un plano de hipertextura que muestre una huella, rastro o marca física en un material histórico?[ ] 11. Sincronización Inversa Perfecta: ¿La cadencia de la locución humana (112-114 WPM) concuerda rítmicamente con los impactos visuales, y los silencios estructurales de 2 segundos han sido respetados para permitir la decantación emocional?
 
 Este Manual Maestro de Producción no es un compendio de sugerencias; es el código genético inalterable que estructura el núcleo de Huellas de la Humanidad. Su ejecución meticulosa es el único mecanismo validado capaz de transformar simples secuencias algorítmicas en la reconstrucción viviente de nuestro pasado colectivo.
 `;
@@ -351,7 +373,7 @@ const PromptGenerator = () => {
 
   // Cargar plantilla desde LocalStorage al iniciar
   useEffect(() => {
-    const key = 'huellas_master_template_v51';
+    const key = 'huellas_master_template_v52';
     const savedTemplate = localStorage.getItem(key);
     const initialText = savedTemplate ? savedTemplate : DEFAULT_TEMPLATE.trim();
     setTemplateText(initialText);
@@ -361,7 +383,7 @@ const PromptGenerator = () => {
 
   // Guardar plantilla en LocalStorage MANUALMENTE
   const saveTemplate = () => {
-    const key = 'huellas_master_template_v51';
+    const key = 'huellas_master_template_v52';
     localStorage.setItem(key, templateText);
     alert('✅ Plantilla Base guardada con éxito.');
   };
