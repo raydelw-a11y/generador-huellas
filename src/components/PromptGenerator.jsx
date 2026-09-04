@@ -22,12 +22,21 @@ Antes de redactar cualquier prompt, clip o metadata, la IA DEBE PREGUNTAR OBLIGA
 -> ALTO INQUEBRANTABLE: La IA debe detenerse aquí y esperar la respuesta del usuario con el tema y la tipología seleccionada. No generes ningún clip ni metadata hasta recibir esta confirmación.
 
 ETAPA 2: GENERACIÓN DE LOS CLIPS DE VIDEO (PROMPTS Y DIRECCIÓN)
-Una vez que el usuario confirme el tema y la tipología, la IA generará y entregará EXCLUSIVAMENTE los 3 clips de video (Clip 1 Hook de 4s, Clip 2 de 8s, Clip 3 de 8s), conteniendo para cada clip:
-1. Identificación del Clip y Selección de Cámara (plano, ángulo, movimiento, lente).
-2. Explicación Visual del Clip (contexto narrativo en español).
-3. Prompt de Imagen Inicial (en inglés para Banana Pro con 'no text').
-4. Prompt de Movimiento de Video con Audio Foley Integrado (en inglés para Omni Flash, integrando el diseño foley acústico dentro del prompt).
-5. Texto en Pantalla (para colocar manualmente en CapCut).
+Una vez que el usuario confirme el tema y la tipología, la IA generará y entregará EXCLUSIVAMENTE los 3 clips de video (Clip 1 Hook de 4s, Clip 2 de 8s, Clip 3 de 8s).
+
+- Para el Clip 1 (Hook de 4s):
+  1. Identificación del Clip y Selección de Cámara (plano, ángulo, movimiento, lente).
+  2. Explicación Visual del Clip (contexto narrativo en español).
+  3. Prompt de Imagen Inicial (en inglés para Banana Pro con 'no text').
+  4. Prompt de Movimiento de Video con Audio Foley Integrado (en inglés para Omni Flash).
+  5. Texto en Pantalla (Exclusivo Clip 1 para CapCut): Debe contener obligatoriamente LUGAR, TIEMPO (año/siglo) y TÍTULO QUE RESUMA CON GANCHO de qué va el video.
+
+- Para el Clip 2 (8s) y Clip 3 (8s):
+  1. Identificación del Clip y Selección de Cámara.
+  2. Explicación Visual del Clip.
+  3. Prompt de Imagen Inicial (en inglés para Banana Pro con 'no text').
+  4. Prompt de Movimiento de Video con Audio Foley Integrado (en inglés para Omni Flash).
+  (Los Clips 2 y 3 no llevan texto en pantalla).
 -> ALTO: La IA entrega los clips y concluye su respuesta. NO incluyas la metadata de publicación en esta etapa.
 
 ETAPA 3: GENERACIÓN DE METADATA PARA SUBIR EL VIDEO (ENTREGA POSTERIOR)
@@ -157,14 +166,20 @@ INSTRUCCIÓN DE ROL: Actúa como un historiador, director de cine, y periodista 
 - Arquitectura del Reel Contemplativo Panorámico: El metraje se compone exactamente de tres clips: un clip inicial de 4 segundos para el hook, seguido de dos clips de 8 segundos (Total 20 segundos). Queda totalmente prohibida la edición acelerada.
 - Audio y Tono Emocional: El video no lleva voz narrativa ni música. Su diseño acústico es exclusivamente Foley e imagen con el objetivo explícito de causar horror y angustia psicológica en el espectador.
 - Herramientas de Generación: Utiliza "banana pro" para la generación de las imágenes iniciales estáticas de cada clip. Posteriormente, emplea el modelo de video "omni flash" para darle movimiento a dichas imágenes.
-- Regla de Texto en Pantalla (Edición Manual en CapCut): El video incluye texto en pantalla breve, enigmático y contundente para cada clip. Dicho texto NO debe incluirse dentro de los prompts de generación de imagen/video (Google Flow debe recibir prompts con 'no text'). La IA debe suministrar en la entrega el texto exacto correspondiente a cada clip para ser colocado manualmente en CapCut durante el montaje posterior.
-- Estructura de Entrega Obligatoria para los 3 Clips (Clip 1 Hook de 4s, Clip 2 de 8s, Clip 3 de 8s):
-  Para cada uno de los 3 clips, la IA debe entregar de forma clara y estructurada:
-  1. Identificación del Clip y Selección de Cámara: Especificar el tipo de plano, angulación, movimiento de cámara y óptica seleccionados de los catálogos.
-  2. Explicación Visual del Clip: Descripción narrativa y contextual en español explicando con precisión qué ocurre en la escena, qué acción física o acontecimiento se desenvuelve y cuál es la atmósfera psicológica que transmite el plano.
-  3. Prompt de Imagen Inicial: En idioma inglés para 'banana pro' (con sufijos obligatorios y 'no text').
-  4. Prompt de Movimiento de Video (con Audio Foley Integrado): En idioma inglés optimizado para el modelo 'omni flash', integrando obligatoriamente dentro del propio prompt de video la descripción acústica del Foley y sonido ambiental (ej. 'ambient sound of howling cold wind, creaking wood, muffled distant footsteps, no music, no speech').
-  5. Texto en Pantalla: Texto corto y contundente para agregar manualmente en CapCut durante el montaje.
+- Regla de Texto en Pantalla (Exclusivo Clip 1 - Edición Manual en CapCut): El texto en pantalla se coloca ÚNICA Y EXCLUSIVAMENTE en el Clip 1 (Hook). Los Clips 2 y 3 van completamente limpios sin texto en pantalla. En el Clip 1, el texto debe contener obligatoriamente: LUGAR, TIEMPO (año/siglo) y TÍTULO QUE RESUMA CON GANCHO de qué va el video. Dicho texto NO debe incluirse dentro de los prompts de generación de imagen/video (Google Flow debe recibir prompts con 'no text'). La IA debe suministrar en la entrega el texto exacto correspondiente para ser colocado manualmente en CapCut durante el montaje posterior.
+- Estructura de Entrega Obligatoria para los 3 Clips:
+  * CLIP 1 (HOOK DE 4s):
+    1. Identificación del Clip y Selección de Cámara: Plano, angulación, movimiento de cámara y óptica seleccionados de los catálogos.
+    2. Explicación Visual del Clip: Descripción narrativa y contextual en español explicando con precisión qué ocurre en la escena y cuál es la atmósfera psicológica que transmite el plano.
+    3. Prompt de Imagen Inicial: En idioma inglés para 'banana pro' (con sufijos obligatorios y 'no text').
+    4. Prompt de Movimiento de Video (con Audio Foley Integrado): En idioma inglés para 'omni flash' con diseño foley acústico integrado dentro del propio prompt.
+    5. Texto en Pantalla (Manual CapCut): Lugar, Tiempo (año/siglo) y Título Gancho.
+  * CLIP 2 (8s) y CLIP 3 (8s):
+    1. Identificación del Clip y Selección de Cámara: Plano, angulación, movimiento de cámara y óptica.
+    2. Explicación Visual del Clip: Descripción narrativa y contextual en español.
+    3. Prompt de Imagen Inicial: En idioma inglés para 'banana pro' (con sufijos obligatorios y 'no text').
+    4. Prompt de Movimiento de Video (con Audio Foley Integrado): En idioma inglés para 'omni flash'.
+    (Los Clips 2 y 3 van completamente limpios sin texto en pantalla).
 - Tipos de Cámara a Utilizar (Escoge dependiendo de la historia y las escenas):
   1. ESCALA Y ENCUADRE (DISTANCIA PSICOLÓGICA):
   - Gran Plano General / Plano Panorámico: Despoja al ser humano de su agencia y lo convierte en una silueta devorada por el entorno. Transmite asombro melancólico, soledad absoluta e insignificancia ante la inmensidad del tiempo, la geografía o la arquitectura industrial.
@@ -373,7 +388,7 @@ const PromptGenerator = () => {
 
   // Cargar plantilla desde LocalStorage al iniciar
   useEffect(() => {
-    const key = 'huellas_master_template_v52';
+    const key = 'huellas_master_template_v53';
     const savedTemplate = localStorage.getItem(key);
     const initialText = savedTemplate ? savedTemplate : DEFAULT_TEMPLATE.trim();
     setTemplateText(initialText);
@@ -383,7 +398,7 @@ const PromptGenerator = () => {
 
   // Guardar plantilla en LocalStorage MANUALMENTE
   const saveTemplate = () => {
-    const key = 'huellas_master_template_v52';
+    const key = 'huellas_master_template_v53';
     localStorage.setItem(key, templateText);
     alert('✅ Plantilla Base guardada con éxito.');
   };
