@@ -104,17 +104,100 @@ En una interacción posterior, la IA generará la metadata de publicación en fo
 - Línea invisible (⠀)
 - Comentario fijado directo (CTA de suscripción/interacción sin etiqueta).
 [/?TIPO_PRODUCCION]
+[?TIPO_PRODUCCION=PRINCIPAL_16_9]
+PROTOCOLO SECUENCIAL DE EJECUCIÓN OBLIGATORIO: PRINCIPAL 16:9 (7 ETAPAS POR SEPARADO):
+Este formato corresponde al documental horizontal (16:9) de larga duración de Huellas de la Humanidad para YouTube. La IA debe ejecutar obligatoriamente la producción en siete etapas separadas y secuenciales, sin saltarse ninguna y respetando estrictamente los comandos de parada (ALTO):
+
+ETAPA 1: SELECCIONAR TEMA
+Antes de redactar cualquier prompt, guion o investigación, la IA DEBE PREGUNTAR OBLIGATORIAMENTE AL USUARIO qué tema o acontecimiento histórico abordará este documental de formato Principal 16:9 (o tomar el tema indicado si el usuario ya lo proporcionó). Preséntale sugerencias de temas de alto impacto divididos por tipologías:
+1. Un suceso histórico o catástrofe
+2. Un personaje y su dilema moral o caída
+3. Un misterio sin resolver o desaparición histórica
+4. Un true crime histórico
+5. Una conciencia o realidad colectiva ante una crisis
+6. Una manipulación psicológica o política masiva
+7. Una hazaña arquitectónica, táctica o tecnológica
+8. O permitir al usuario introducir su propio tema.
+-> ALTO INQUEBRANTABLE: La IA debe detenerse aquí y esperar la respuesta y confirmación del usuario antes de avanzar. No generes ninguna investigación, guion, clips ni metadata hasta recibir esta confirmación.
+
+ETAPA 2: CREAR PROMPT PARA INVESTIGACIÓN EN OTRO CHAT SEPARADO
+Una vez confirmado el tema por el usuario, la IA generará y entregará un mega-prompt exhaustivo de investigación histórica optimizado para ser copiado y ejecutado en un chat de IA independiente (como Gemini, Claude o ChatGPT). Dicho prompt de investigación debe exigir:
+- Filtro de Realidad en 5 capas: 1) Cronología y hechos fácticos comprobados; 2) Contexto estructural sociopolítico y económico; 3) Experiencia humana visceral y testimonios de la vida cotidiana (sensaciones físicas, angustia, esfuerzo); 4) Debates historiográficos y contradicciones; 5) Detalles arquitectónicos, materiales, vestimentas, texturas y geografía real.
+- Identificación de la paradoja o tensión central del acontecimiento.
+- Descubrimientos inéditos o detalles poco conocidos que sirvan de gancho narrativo.
+-> ALTO INQUEBRANTABLE: La IA entrega únicamente el prompt de investigación y concluye su respuesta. Espera a que el usuario pegue los resultados de la investigación obtenida en el chat antes de avanzar.
+
+ETAPA 3: ANALIZAR EL RESULTADO DE LA INVESTIGACIÓN
+Una vez que el usuario pegue la información resultante de la investigación, la IA analizará a fondo el material histórico y estructurará la columna vertebral del documental:
+1. Síntesis de Hechos Clave y Línea Temporal del episodio.
+2. Contradicción Central: Definir la paradoja estructural sobre la que orbitará el relato (ej. la muralla que protegía pero convirtió a la ciudad en una trampa mortal).
+3. Promesa Narrativa (El Contrato Invisible): El enigma, tensión o perspectiva que se revelará antes del minuto 02:00 para garantizar que el espectador permanezca hasta el final.
+4. Anclaje del Hook: Definir la fecha y lugar exactos de inicio junto con la premisa intrigante o dramática de apertura.
+5. Imagen Final del Episodio: Describir el concepto y plano macro de cierre (la huella o marca física) hacia el cual convergerá todo el documental.
+-> ALTO INQUEBRANTABLE: La IA presenta el análisis estructural y conceptual completo y se detiene. Espera la validación o ajustes del usuario antes de proceder a la redacción del guion.
+
+ETAPA 4: CREAR EL TEXTO DE LA VOZ EN OFF
+Tras la aprobación del análisis de la investigación, la IA redactará el guion completo de la voz narrativa (voiceover) para el documental largo horizontal 16:9:
+- Cadencia de Lectura: Calibrada a 112-114 Palabras Por Minuto (WPM) para una narración pausada, solemne e inmersiva.
+- Estilo y Tono: Narración cinematográfica e institucional en tercera persona o plural institucional ("caminamos", "vemos" si es Formato A), con rigor histórico y profundidad psicológica.
+- Hook de Inicio (0 a 24s): Comienza con un fuerte anclaje de fecha y lugar sin rodeos enciclopédicos. (Queda totalmente eliminado cualquier corte a pantalla negra o texto centrado en los clips iniciales; la imagen es continua).
+- Pausas en la Locución (Únicamente de 2 o 3 segundos): La voz en off debe incorporar obligatoriamente silencios narrativos marcados explícitamente en el guion como "/2s" o "/3s" (por ejemplo al inicio, tras revelaciones clave o transiciones de escena), permitiendo que el diseño sonoro Foley y la imagen asuman el peso inmersivo. Queda prohibido el uso de pausas de 4s, 6s o cualquier otra duración distinta de 2 o 3 segundos.
+- Fórmula de Eslogan y Pregunta de Retención:
+  * Antes del minuto 02:00: Formular una pregunta intrigante directa al espectador antes del eslogan completo: "Si quieres seguir cruzando el umbral del tiempo para vivir la historia desde dentro, dale like a este video y suscríbete a Huellas de la Humanidad. Cada historia deja una huella. Aquí seguimos sus rastros."
+  * Al cierre del documental: Responder reflexivamente a dicha pregunta y cerrar con: "Ha sido toda una aventura... [frase reflexiva conectora]. Cada historia deja una huella. Aquí seguimos sus rastros."
+- Restricciones Estrictas: Cero signos de exclamación (!), cero uso de la palabra "adultos", no forzar la etiqueta "anónimos", y sustitución de palabras violentas explícitas por eufemismos periodísticos y refinados.
+-> ALTO INQUEBRANTABLE: La IA entrega el guion de locución y concluye su respuesta. Espera la revisión y aprobación del usuario.
+
+ETAPA 5: PROMPTS DE IMÁGENES INICIALES Y CLIPS EN BLOQUES DE 10
+Una vez aprobado el guion de voz en off, la IA generará los prompts para las imágenes y videos en bloques controlados de 10 clips por entrega (Clips 1 al 10; luego Clips 11 al 20, y así sucesivamente):
+- Duración de los Clips: Todos los clips serán de 10 segundos de duración generados con el modelo de video "omni flash".
+- Shots Internos (Determinación por la Escena): La IA determinará analíticamente cuáles clips se mantendrán como un shot continuo de 10 segundos y cuáles tendrán dos shots de 5 segundos cada uno dentro del bloque de 10s, dependiendo de la intensidad dramática, la acción física y la intención narrativa del pasaje.
+- Modelo de Imagen y Video: Banana Pro para la imagen fija inicial (16:9 con 'no text' y sufijos) y Omni Flash para el video con Foley acústico integrado en inglés.
+- Formato de Entrega Limpio en Párrafos Consecutivos (Sin tablas, sin bloques de código Markdown):
+  Proporcionar en párrafos: Imagen 1, debajo Clip 1, Imagen 2, debajo Clip 2... y así consecutivamente:
+
+  Imagen 1
+  [Prompt en inglés para Banana Pro 16:9 'no text', detallando sujeto, entorno, iluminación, óptica 35mm/16mm, cerrando obligatoriamente con el sufijo: cinematic documentary realism, safe framing composition, no modern objects, no CGI look, no text, no speech.]
+
+  Clip 1
+  [Prompt técnico en inglés para Omni Flash, especificando si es un shot continuo de 10s o 2 shots de 5s, movimiento cinético lento de cámara, e integrando la descripción foley sonora ambiental (ambient sound of..., no music, no speech), cerrando con el sufijo obligatorio: cinematic documentary realism, safe framing composition, no modern objects, no CGI look, no text, no speech.]
+
+  Imagen 2
+  [Prompt en inglés para Banana Pro...]
+
+  Clip 2
+  [Prompt técnico en inglés para Omni Flash...]
+  (Continuar hasta completar el bloque de 10 clips).
+-> ALTO INQUEBRANTABLE: La IA entrega el bloque de 10 clips y se detiene. Espera la confirmación del usuario para generar el siguiente bloque de 10 clips.
+
+ETAPA 6: PROMPTS PARA MINIATURA 16:9 Y 9:16
+Una vez completados los clips visuales del episodio, la IA generará dos prompts específicos para diseñar las miniaturas oficiales de alto CTR:
+1. Prompt para Miniatura Horizontal (16:9 - YouTube): Composición panorámica con regla de tercios, inyectando una emoción dominante extrema y una contradicción visual impactante (ej. el protagonista o escena central en su momento de mayor vulnerabilidad o poder). Texto integrado o sugerido brutalmente conciso de 1 a 3 palabras como máximo, que complemente y no repita el título del video.
+2. Prompt para Miniatura Vertical (9:16 - Móvil / Redes / Reels / Shorts): Composición vertical centrada con elemento dominante en el 60% del encuadre para visibilidad óptima en pantallas pequeñas.
+-> ALTO INQUEBRANTABLE: La IA entrega los dos prompts de miniaturas y se detiene. Espera la confirmación del usuario antes de pasar a la metadata.
+
+ETAPA 7: METADATOS PARA SUBIR EL VIDEO
+En la interacción final, la IA generará la metadata completa de publicación para YouTube en formato "Todo Corrido" y estrictamente SIN encabezados de sección (cero "Título:", cero "Descripción:", cero "Hashtags:", cero "Comentario Fijado:"):
+- Título inmersivo, atractivo y periodístico, finalizando obligatoriamente con el sufijo: " | Documental Completo" (sin menciones de IA).
+- Línea invisible con carácter braille (⠀).
+- Descripción completa y densa estructurada en formato "Todo Corrido", separando cada bloque semántico con una línea braille (⠀).
+- Sección de Capítulos para YouTube: Exactamente 10 capítulos obligatorios con sus respectivos timestamps cronológicos (00:00 - Introducción, etc.).
+- Exactamente 5 hashtags en español y formato #CamelCase (#DocumentalEnEspañol, #AmantesDeLaHistoria, más 3 hashtags específicos referentes al tema del video).
+- Leyenda oficial del Escudo de IA para documentales largos.
+- Línea invisible con carácter braille (⠀).
+- Comentario fijado directo (llamado a la acción para suscribirse e interactuar, sin etiqueta).
+[/?TIPO_PRODUCCION]
 ### FICHA TÉCNICA DEL EPISODIO ###
 INSTRUCCIONES PARA EL EPISODIO ACTUAL:
-[?TIPO_PRODUCCION=PRINCIPAL_16_9|TIMELAPSE]
+[?TIPO_PRODUCCION=PRINCIPAL_16_9|INMERSIVO_CONTEMPLATIVO|9X16_1_MINUTO]
+Tema del Video: [TEMA_DEL_VIDEO]
+[/?TIPO_PRODUCCION]
+[?TIPO_PRODUCCION=TIMELAPSE]
 Tema del Video: [TEMA_DEL_VIDEO]
 Contradicción Central: [CONTRADICCION_CENTRAL]
 Promesa Narrativa (Antes del min 2:00): [PROMESA_NARRATIVA]
 Anclaje del Hook (Fecha o Lugar): [ANCLAJE_DEL_HOOK]
 Imagen Final del Episodio: [IMAGEN_FINAL]
-[/?TIPO_PRODUCCION]
-[?TIPO_PRODUCCION=INMERSIVO_CONTEMPLATIVO|9X16_1_MINUTO]
-Tema del Video: [TEMA_DEL_VIDEO]
 [/?TIPO_PRODUCCION]
 ####################################
 
@@ -178,7 +261,7 @@ Sincronización Temática (No Literalidad Visual): La imagen no tiene la obligac
 VOLUMEN IV: FLUJO DE TRABAJO Y ARQUITECTURA TEMPORAL
 [?TIPO_PRODUCCION=PRINCIPAL_16_9|TIMELAPSE]
 Capítulo 9: Flujo de Trabajo Paso a Paso (Sincronización Inversa)
-El proceso de manufactura audiovisual en Huellas de la Humanidad repudia la improvisación visual. Se rige por un principio operativo denominado Sincronización Inversa Absoluta. En la producción tradicional, a menudo la imagen dicta el ritmo; en nuestro sistema, la voz humana es el metrónomo inalterable. La generación de prompts sobre tiempos teóricos está prohibida. El flujo inquebrantable desde la investigación hasta la exportación consta de los siguientes pasos:Investigación Multidimensional (Filtro de Realidad): Toda producción comienza con una investigación organizada en cinco capas progresivas: 1) Hechos básicos y cronología; 2) Contexto estructural sociopolítico; 3) Experiencia humana a través de testimonios y reconstrucciones; 4) Interpretación y debate histórico; 5) Dimensión visual y arquitectónica real. Si un elemento no es historically verificable o lógicamente inferible, se descarta.Arquitectura Conceptual: El equipo define explícitamente la Contradicción Central, redacta la Promesa Narrativa y establece la Imagen Final hacia la cual convergerá el episodio.Redacción Cronometrada: El guion se escribe optimizado para mantener una cadencia rigurosa de 112 a 114 Palabras Por Minuto (WPM). Esta velocidad deliberada es crucial para permitir que la inmersión visual y los silencios acústicos respiren sin asfixiar al espectador con densidad verbal.Grabación de la Pista Maestra: La locución se registra respetando los tonos institucionales (Formato A) o de crónica (Formato B), y se masteriza como el eje de la producción.Construcción del Timeline Real: Una vez renderizado el audio, se mapean las marcas de tiempo milimétricas. El guion se transforma en una hoja de cálculo temporal. Si el locutor menciona "el colapso de la torre" en el minuto 03:14, el clip visual generado debe coordinar esa acción física exactamente en esa marca de tiempo.Diseño de Escenas y Asignación Foley: Se fragmenta el timeline en bloques de 8 segundos, asignando la acción visual precisa y el diseño acústico (Foley) que acompañará a cada micro-plano.Ingeniería de Prompts y Renderizado: Redacción técnica de las instrucciones en inglés para el motor [MODELO_DE_IA] e inicio de la generación de lotes.Edición Invisible: Montaje en software con cortes motivados por la emoción o el cambio de espacio, aplicando una sincronización audiovisual total.Empaque SEO y QA: Elaboración de miniaturas, auditoría final mediante el checklist y configuración del algoritmo de publicación.
+El proceso de manufactura audiovisual en Huellas de la Humanidad repudia la improvisación visual. Se rige por un principio operativo denominado Sincronización Inversa Absoluta. En la producción tradicional, a menudo la imagen dicta el ritmo; en nuestro sistema, la voz humana es el metrónomo inalterable. La generación de prompts sobre tiempos teóricos está prohibida. El flujo inquebrantable desde la investigación hasta la exportación consta de los siguientes pasos:Investigación Multidimensional (Filtro de Realidad): Toda producción comienza con una investigación organizada en cinco capas progresivas: 1) Hechos básicos y cronología; 2) Contexto estructural sociopolítico; 3) Experiencia humana a través de testimonios y reconstrucciones; 4) Interpretación y debate histórico; 5) Dimensión visual y arquitectónica real. Si un elemento no es historically verificable o lógicamente inferible, se descarta.Arquitectura Conceptual: El equipo define explícitamente la Contradicción Central, redacta la Promesa Narrativa y establece la Imagen Final hacia la cual convergerá el episodio.Redacción Cronometrada: El guion se escribe optimizado para mantener una cadencia rigurosa de 112 a 114 Palabras Por Minuto (WPM). Esta velocidad deliberada es crucial para permitir que la inmersión visual y los silencios acústicos respiren sin asfixiar al espectador con densidad verbal.Grabación de la Pista Maestra: La locución se registra respetando los tonos institucionales (Formato A) o de crónica (Formato B), y se masteriza como el eje de la producción.Construcción del Timeline Real: Una vez renderizado el audio, se mapean las marcas de tiempo milimétricas. El guion se transforma en una hoja de cálculo temporal. Si el locutor menciona "el colapso de la torre" en el minuto 03:14, el clip visual generado debe coordinar esa acción física exactamente en esa marca de tiempo.Diseño de Escenas y Asignación Foley: Se fragmenta el timeline en bloques de 10 segundos con Omni Flash, determinando la IA cuáles tendrán dos shots de 5 segundos cada uno y cuáles se mantendrán como un shot continuo de 10 segundos, asignando la acción visual precisa y el diseño acústico (Foley) que acompañará a cada escena.Ingeniería de Prompts y Renderizado: Redacción técnica de las instrucciones en inglés para el motor [MODELO_DE_IA] e inicio de la generación de lotes.Edición Invisible: Montaje en software con cortes motivados por la emoción o el cambio de espacio, aplicando una sincronización audiovisual total.Empaque SEO y QA: Elaboración de miniaturas, auditoría final mediante el checklist y configuración del algoritmo de publicación.
 [/?TIPO_PRODUCCION]
 [?TIPO_PRODUCCION=9X16_1_MINUTO]
 Capítulo 9: Flujo de Trabajo (Formato 9x16 1 Minuto)
@@ -197,9 +280,9 @@ Capítulo 10: Arquitectura Temporal y Tensión Narrativa
 [?TIPO_PRODUCCION=PRINCIPAL_16_9|TIMELAPSE]
 El tiempo es tratado como una herramienta de ingeniería emocional. La distribución de los bloques narrativos se diseña para capturar y sostener la atención humana, estructurándose de la siguiente forma :El Hook Extremo (0–24s): Fase de impacto sensorial máximo diseñada para detener el desplazamiento (scroll) del usuario. Consta de 3 clips iniciales. Debe iniciar con un anclaje fuerte (una fecha, un lugar o la contradicción central) sin explicaciones enciclopédicas. 
 [/?TIPO_PRODUCCION]
-[?TIPO_PRODUCCION=PRINCIPAL_16_9]Para maximizar el impacto cognitivo en formato horizontal, los clips 2 y 3 deben finalizar con un corte dramático a una pantalla negra acompañada de texto centrado.[/?TIPO_PRODUCCION][?TIPO_PRODUCCION=9X16_1_MINUTO|TIMELAPSE|REELS_16_SEG]Queda estrictamente prohibido incluir cualquier tipo de texto en pantalla para estos videos cortos; la imagen debe permanecer completamente limpia y visual.[/?TIPO_PRODUCCION][?TIPO_PRODUCCION=INMERSIVO_CONTEMPLATIVO]Texto en Pantalla (Edición Manual en CapCut): El texto en pantalla será exclusivo del Clip 1 e incluirá lugar, tiempo (año/siglo) y título que resuma con gancho de qué va el video. Este texto NO debe ser generado por herramientas de IA ni insertado en los prompts visuales (los prompts deben incluir estrictamente 'no text'). La IA debe especificar claramente en la ficha del Clip 1 qué texto colocar manualmente en CapCut durante la edición posterior. Los clips 2 y 3 no llevan texto en pantalla.[/?TIPO_PRODUCCION]
+[?TIPO_PRODUCCION=PRINCIPAL_16_9]Queda eliminado cualquier corte a pantalla negra o texto centrado en los clips iniciales; la imagen debe ser continua y visualmente inmersiva.[/?TIPO_PRODUCCION][?TIPO_PRODUCCION=9X16_1_MINUTO|TIMELAPSE|REELS_16_SEG]Queda estrictamente prohibido incluir cualquier tipo de texto en pantalla para estos videos cortos; la imagen debe permanecer completamente limpia y visual.[/?TIPO_PRODUCCION][?TIPO_PRODUCCION=INMERSIVO_CONTEMPLATIVO]Texto en Pantalla (Edición Manual en CapCut): El texto en pantalla será exclusivo del Clip 1 e incluirá lugar, tiempo (año/siglo) y título que resuma con gancho de qué va el video. Este texto NO debe ser generado por herramientas de IA ni insertado en los prompts visuales (los prompts deben incluir estrictamente 'no text'). La IA debe especificar claramente en la ficha del Clip 1 qué texto colocar manualmente en CapCut durante la edición posterior. Los clips 2 y 3 no llevan texto en pantalla.[/?TIPO_PRODUCCION]
 [?TIPO_PRODUCCION=PRINCIPAL_16_9|TIMELAPSE]
-Silencios Narrativos Estructurales: Los silencios no son huecos por falta de contenido; son herramientas deliberadas para la asimilación emocional. Es obligatorio insertar un silencio absoluto de 2 segundos entre el final del Hook Extremo y el inicio del Hook Extendido, así como otro silencio de 2 segundos entre el Hook Extendido y la Historia Principal.El Hook Extendido (26–144s): Una vez capturada la atención, este bloque expande el contexto histórico, establece las bases del conflicto y articula de forma natural la Promesa Narrativa del documental.La Historia Principal: Desarrollo profundo del relato con un ritmo de edición variable que fluctúa entre la densidad informativa y la contemplación visual, alternando entre planos humanos directos y amplios paisajes atmosféricos.
+Silencios Narrativos Estructurales: Los silencios no son huecos por falta de contenido; son herramientas deliberadas para la asimilación emocional. Es obligatorio insertar un silencio absoluto de 2 o 3 segundos entre el final del Hook Extremo y el inicio del Hook Extendido, así como otro silencio de 2 o 3 segundos entre el Hook Extendido y la Historia Principal.El Hook Extendido (26–144s): Una vez capturada la atención, este bloque expande el contexto histórico, establece las bases del conflicto y articula de forma natural la Promesa Narrativa del documental.La Historia Principal: Desarrollo profundo del relato con un ritmo de edición variable que fluctúa entre la densidad informativa y la contemplación visual, alternando entre planos humanos directos y amplios paisajes atmosféricos.
 [/?TIPO_PRODUCCION]
 
 Capítulo 11: Geometría del Encuadre y Relación de Aspecto
@@ -210,9 +293,9 @@ El proyecto exige la creación simultánea de dos entregables, generados a parti
 (Videos largos inmersivos para YouTube y Facebook)
 - Composición de Planos: Profundidad de campo panorámica. Las figuras humanas deben ubicarse en los tercios laterales, permitiendo que el entorno arquitectónico o natural domine el centro del cuadro.
 - Integración de Enlaces (CTA): Llamado a la acción ubicado tanto en la Descripción como en el Comentario Fijado.
-- Pausas Estructurales y Atmosféricas en la Locución: La voz narrativa debe incluir siempre pausas explícitas marcadas en el guion. Existen las pausas fijas obligatorias ("/2s") en tres momentos clave (al inicio absoluto, después del eslogan completo del segundo hook, y justo antes del eslogan corto final). Además, la IA debe insertar estratégicamente pausas variables adicionales (indicadas como "/#s", por ejemplo "/4s" o "/6s") en diferentes partes del documental donde la voz narrativa calla temporalmente y la imagen junto con el audio Foley asumen el peso total de la inmersión narrativa.
+- Pausas Estructurales y Atmosféricas en la Locución: La voz narrativa debe incluir siempre pausas explícitas marcadas en el guion. Las pausas en la locución solo serán de 2 o 3 segundos ("/2s" o "/3s") dependiendo de la escena y la intención dramática (ej. al inicio, tras revelaciones clave, después del eslogan del segundo hook, y antes del eslogan corto final). Queda terminantemente prohibido usar pausas de 4s, 6s o cualquier otra duración distinta de 2 o 3 segundos. Durante estas pausas, la voz calla temporalmente y la imagen junto con el audio Foley asumen el peso total de la inmersión narrativa.
 - Regla de Movimiento de Cámara (Estándar): Paneos horizontales lentos (slow pan) o travellings de aproximación milimétrica (slow push-in). Queda prohibido el movimiento de cámara en mano (shaky cam) a menos que la escena describa un combate bélico o pánico extremo.
-- Ritmo de Montaje (Pacing Dinámico para Retención): Hasta el clip 11, todos los clips de 8 segundos deben fragmentarse hiperactivamente en 4 shots de 2 segundos cada uno. Este bloque inicial debe ir acompañado de un audio inmersivo, cinematográfico foley e intenso para retener al espectador y evitar el skip. A partir del clip 12, el ritmo se relaja y los clips pueden tener un solo shot de 8 segundos o dos shots de cualquier combinación matemática que sume 8 segundos.
+- Arquitectura y Duración de Clips (10 Segundos con Omni Flash): Todos los clips serán de exactamente 10 segundos de duración generados con el modelo de video "omni flash". La IA determinará cuáles clips tendrán dos shots dentro de 5 segundos cada uno y cuáles se mantendrán como un shot continuo de 10 segundos, dependiendo de la escena, el dinamismo visual y la intención dramática de la historia. Queda totalmente eliminada la fragmentación hiperactiva de 4 shots de 2 segundos.
 [/?TIPO_PRODUCCION]
 
 [?TIPO_PRODUCCION=INMERSIVO_CONTEMPLATIVO]
@@ -360,7 +443,7 @@ Capítulo 15: Las 7 Leyes de Oro del Timelapse 3D Histórico (Módulo Veo 3.1)
 
 VOLUMEN VI: DISEÑO SONORO Y PAISAJES ACÚSTICOS
 Capítulo 16: Ingeniería de Foley y Regla de No-Voces
-El audio es la argamasa que consolida la reconstrucción tridimensional. En Huellas de la Humanidad, no se emplean pistas genéricas musicales que ahoguen la escena; se orquesta un paisaje acústico preciso.Regla de No-Voces IA: El "valle inquietante" no solo afecta lo visual, sino también lo auditivo. Las inteligencias artificiales de video a menudo alucinan coros fantasmales, risas inconexas o murmullos robóticos. Queda prohibida la inclusión de voces humanas generadas por motores visuales. La directriz no spoken voice, no human speech del prompt es el primer filtro; la edición en postproducción debe silenciar cualquier filtración restante.Foley Obligatorio por Shot Interno: La textura visual exige correspondencia sonora. Cada clip general de 8 segundos, o cada micro-plano de 2 segundos en el formato vertical, debe tener asignada una capa de diseño sonoro (Foley). El guionista o editor debe detallar el audio exacto para cada corte (ej. synchronized foley of a wooden cart creaking on cobblestone). Si la acción acústica fluye continuamente desde el plano anterior, se debe declarar la instrucción operativa: Continuation of previous shot's acoustic ambience.
+El audio es la argamasa que consolida la reconstrucción tridimensional. En Huellas de la Humanidad, no se emplean pistas genéricas musicales que ahoguen la escena; se orquesta un paisaje acústico preciso.Regla de No-Voces IA: El "valle inquietante" no solo afecta lo visual, sino también lo auditivo. Las inteligencias artificiales de video a menudo alucinan coros fantasmales, risas inconexas o murmullos robóticos. Queda prohibida la inclusión de voces humanas generadas por motores visuales. La directriz no spoken voice, no human speech del prompt es el primer filtro; la edición en postproducción debe silenciar cualquier filtración restante.Foley Obligatorio por Shot Interno: La textura visual exige correspondencia sonora. Cada clip general (de 10 segundos en Principal 16:9, u 8 segundos en formato vertical), así como cada shot interno de 5 segundos, debe tener asignada una capa de diseño sonoro (Foley). El guionista o editor debe detallar el audio exacto para cada corte (ej. synchronized foley of a wooden cart creaking on cobblestone). Si la acción acústica fluye continuamente desde el plano anterior, se debe declarar la instrucción operativa: Continuation of previous shot's acoustic ambience.
 
 [?TIPO_PRODUCCION=PRINCIPAL_16_9|9X16_1_MINUTO|TIMELAPSE]
 Anclaje Visual al Eslogan y Cierre (Dualidad de Formatos):
@@ -422,7 +505,7 @@ Comentario Fijado: El Comentario Fijado (CTA y enlaces) es obligatoriamente lo �
 
 VOLUMEN VIII: AUDITORÍA DE ÉLITE Y CONTROL DE CALIDAD
 Capítulo 18: Checklist de Control de Calidad Final (QA)
-La publicación de un documento de Huellas de la Humanidad es irreversible. Antes de presionar el botón de exportación y programar el video en la plataforma, el Director Ejecutivo, el Editor o el Arquitecto de Sistemas Audiovisuales debe confrontar el metraje final contra el siguiente escrutinio inflexible. Un solo fallo en este checklist implica la retención del episodio y la re-ingeniería del bloque defectuoso :[ ] 1. Contradicción Central: ¿La tensión histórica o paradoja planteada en el inicio permea de manera constante hasta la resolución del documental?[ ] 2. Promesa Narrativa: ¿El enigma, revelación o experiencia prometida antes del minuto 02:00 fue resuelta y entregada plenamente al espectador?[ ] 3. Filtro de Realidad (Anacronismos): ¿Se ha auditado visualmente cada plano para garantizar la inexistencia total de prendas, objetos de cristal moderno, arquitectura incoherente o tecnología anacrónica?[ ] 4. Auditoría Anti-Estancamiento (Planos): ¿Se ha verificado que ningún tipo de plano (ej. Drone reveal) se repita idénticamente en el rango cercano de los últimos 6 a 8 clips?[ ] 5. Auditoría Anti-Estancamiento (Cámara): ¿Se ha constatado que el mismo movimiento de cámara no se encadena consecutivamente sin una justificación narrativa extrema?[ ] 6. Continuidad Ambiental: ¿Las transiciones entre clips mantienen una coherencia impecable en el uso del catálogo de iluminación, la materialidad de las ruinas y la textura del espacio?[ ] 7. Sinergia de Miniatura: ¿La miniatura gráfica proyecta una emoción dominante que intriga y que es complementaria (jamás repetitiva) respecto al título del video?[ ] 8. Contención de Hashtags: ¿El bloque final de la descripción contiene un recuento estricto y exacto de cinco (5) hashtags?[ ] 9. Formato "Todo Corrido": ¿La descripción de la plataforma fluye orgánicamente sin el uso de subtítulos burocráticos ni encabezados ("Título:", "Descripción:"), separada únicamente por una línea de retorno de carro con braille (⠀) entre bloques?[ ] 10. Acoplamiento del Eslogan: ¿La pronunciación final del lema de la marca coincide milimétricamente con un plano de hipertextura que muestre una huella, rastro o marca física en un material histórico?[ ] 11. Sincronización Inversa Perfecta y Extensión: ¿La cadencia de la locución humana concuerda rítmicamente con los impactos visuales, respetando los silencios estructurales en formatos largos, u omitiéndolos por completo en 9x16 1 minuto cumpliendo estrictamente con los 900 caracteres incluyendo espacios para una narración continua?[ ] 12. Hook de Inicio y Estilo de Narración (9x16 1 Minuto): ¿El preámbulo arranca obligatoriamente con la FECHA y luego el LUGAR, capturando al consumidor en los primeros segundos con una premisa intrigante o terrorífica? ¿La voz en off relata de forma cinematográfica en tercera persona sin hablar jamás en "nosotros", y se nombran los personajes y figuras históricas con naturalidad sin forzar etiquetas como "anónimos"?[ ] 13. Nomenclatura de Entrada de Prompts: ¿Todos los prompts de imagen inicial arrancan obligatoriamente con "Imagen clip [número]" y todos los prompts de clips de video con "Clip [número]"?
+La publicación de un documento de Huellas de la Humanidad es irreversible. Antes de presionar el botón de exportación y programar el video en la plataforma, el Director Ejecutivo, el Editor o el Arquitecto de Sistemas Audiovisuales debe confrontar el metraje final contra el siguiente escrutinio inflexible. Un solo fallo en este checklist implica la retención del episodio y la re-ingeniería del bloque defectuoso :[ ] 1. Contradicción Central: ¿La tensión histórica o paradoja planteada en el inicio permea de manera constante hasta la resolución del documental?[ ] 2. Promesa Narrativa: ¿El enigma, revelación o experiencia prometida antes del minuto 02:00 fue resuelta y entregada plenamente al espectador?[ ] 3. Filtro de Realidad (Anacronismos): ¿Se ha auditado visualmente cada plano para garantizar la inexistencia total de prendas, objetos de cristal moderno, arquitectura incoherente o tecnología anacrónica?[ ] 4. Auditoría Anti-Estancamiento (Planos): ¿Se ha verificado que ningún tipo de plano (ej. Drone reveal) se repita idénticamente en el rango cercano de los últimos 6 a 8 clips?[ ] 5. Auditoría Anti-Estancamiento (Cámara): ¿Se ha constatado que el mismo movimiento de cámara no se encadena consecutivamente sin una justificación narrativa extrema?[ ] 6. Continuidad Ambiental: ¿Las transiciones entre clips mantienen una coherencia impecable en el uso del catálogo de iluminación, la materialidad de las ruinas y la textura del espacio?[ ] 7. Sinergia de Miniatura: ¿La miniatura gráfica proyecta una emoción dominante que intriga y que es complementaria (jamás repetitiva) respecto al título del video?[ ] 8. Contención de Hashtags: ¿El bloque final de la descripción contiene un recuento estricto y exacto de cinco (5) hashtags?[ ] 9. Formato "Todo Corrido": ¿La descripción de la plataforma fluye orgánicamente sin el uso de subtítulos burocráticos ni encabezados ("Título:", "Descripción:"), separada únicamente por una línea de retorno de carro con braille (⠀) entre bloques?[ ] 10. Acoplamiento del Eslogan: ¿La pronunciación final del lema de la marca coincide milimétricamente con un plano de hipertextura que muestre una huella, rastro o marca física en un material histórico?[ ] 11. Sincronización Inversa Perfecta y Extensión: ¿La cadencia de la locución humana concuerda rítmicamente con los impactos visuales, respetando las pausas exclusivas de 2 o 3 segundos en Principal 16:9 con clips de 10s (o shots de 5s), u omitiéndolas por completo en 9x16 1 minuto cumpliendo estrictamente con los 900 caracteres incluyendo espacios para una narración continua?[ ] 12. Hook de Inicio y Estilo de Narración (9x16 1 Minuto): ¿El preámbulo arranca obligatoriamente con la FECHA y luego el LUGAR, capturando al consumidor en los primeros segundos con una premisa intrigante o terrorífica? ¿La voz en off relata de forma cinematográfica en tercera persona sin hablar jamás en "nosotros", y se nombran los personajes y figuras históricas con naturalidad sin forzar etiquetas como "anónimos"?[ ] 13. Nomenclatura de Entrada de Prompts: ¿Todos los prompts de imagen inicial arrancan obligatoriamente con "Imagen clip [número]" y todos los prompts de clips de video con "Clip [número]"?
 
 Este Manual Maestro de Producción no es un compendio de sugerencias; es el código genético inalterable que estructura el núcleo de Huellas de la Humanidad. Su ejecución meticulosa es el único mecanismo validado capaz de transformar simples secuencias algorítmicas en la reconstrucción viviente de nuestro pasado colectivo.
 `;
@@ -451,7 +534,7 @@ const PromptGenerator = () => {
 
   // Cargar plantilla desde LocalStorage al iniciar
   useEffect(() => {
-    const key = 'huellas_master_template_v60';
+    const key = 'huellas_master_template_v61';
     const savedTemplate = localStorage.getItem(key);
     const initialText = savedTemplate ? savedTemplate : DEFAULT_TEMPLATE.trim();
     setTemplateText(initialText);
@@ -461,7 +544,7 @@ const PromptGenerator = () => {
 
   // Guardar plantilla en LocalStorage MANUALMENTE
   const saveTemplate = () => {
-    const key = 'huellas_master_template_v60';
+    const key = 'huellas_master_template_v61';
     localStorage.setItem(key, templateText);
     alert('✅ Plantilla Base guardada con éxito.');
   };
