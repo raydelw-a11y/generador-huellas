@@ -12,14 +12,15 @@ La IA debe ejecutar obligatoriamente la producción en tres etapas separadas y s
 
 ETAPA 1: SELECCIÓN DEL TEMA Y TIPOLOGÍA
 Antes de redactar cualquier prompt, clip o metadata, la IA DEBE PREGUNTAR OBLIGATORIAMENTE AL USUARIO qué tipo de video será este episodio. Preséntale las siguientes opciones y dale la oportunidad de elegir una o sugerir otras:
-1. Un suceso
-2. Un personaje
-3. Un misterio sin resolver
-4. Un true crime
-5. Una conciencia o realidad colectiva
-6. Una manipulación psicológica
-7. Una curiosidad
-8. O sugerir otras opciones creativas según la temática.
+1. Un suceso histórico
+2. Un lugar histórico
+3. Un personaje
+4. Un misterio sin resolver
+5. Un true crime
+6. Una conciencia o realidad colectiva
+7. Una manipulación psicológica
+8. Una curiosidad
+9. O sugerir otras opciones creativas según la temática.
 -> ALTO INQUEBRANTABLE: La IA debe detenerse aquí y esperar la respuesta del usuario con el tema y la tipología seleccionada. No generes ningún clip ni metadata hasta recibir esta confirmación.
 
 ETAPA 2: GENERACIÓN DE LOS CLIPS DE VIDEO (PROMPTS Y DIRECCIÓN)
@@ -63,14 +64,15 @@ Este formato corresponde a un video vertical cinematográfico (9:16) con duraci�
 
 ETAPA 1: SELECCIÓN DEL TEMA Y TIPOLOGÍA
 Antes de redactar la duración, voz en off, clips o metadata, la IA DEBE PREGUNTAR OBLIGATORIAMENTE AL USUARIO qué tema o tipología histórica abordará este Reel 9x16. Preséntale las siguientes opciones y dale la oportunidad de elegir una o sugerir otras:
-1. Un suceso
-2. Un personaje
-3. Un misterio sin resolver
-4. Un true crime
-5. Una conciencia o realidad colectiva
-6. Una manipulación psicológica
-7. Una curiosidad
-8. O sugerir otras opciones creativas según la temática.
+1. Un suceso histórico
+2. Un lugar histórico
+3. Un personaje
+4. Un misterio sin resolver
+5. Un true crime
+6. Una conciencia o realidad colectiva
+7. Una manipulación psicológica
+8. Una curiosidad
+9. O sugerir otras opciones creativas según la temática.
 -> ALTO INQUEBRANTABLE: La IA debe detenerse aquí y esperar la respuesta y confirmación del usuario con el tema elegido antes de avanzar. No pases a la siguiente etapa ni generes contenido hasta recibir esta confirmación.
 
 ETAPA 2: DEFINICIÓN DE LA DURACIÓN DEL VIDEO
@@ -157,13 +159,14 @@ Este formato corresponde al documental horizontal (16:9) de larga duración de H
 ETAPA 1: SELECCIONAR TEMA
 Antes de redactar cualquier prompt, guion o investigación, la IA DEBE PREGUNTAR OBLIGATORIAMENTE AL USUARIO qué tema o acontecimiento histórico abordará este documental de formato Principal 16:9 (o tomar el tema indicado si el usuario ya lo proporcionó). Preséntale sugerencias de temas de alto impacto divididos por tipologías:
 1. Un suceso histórico o catástrofe
-2. Un personaje y su dilema moral o caída
-3. Un misterio sin resolver o desaparición histórica
-4. Un true crime histórico
-5. Una conciencia o realidad colectiva ante una crisis
-6. Una manipulación psicológica o política masiva
-7. Una hazaña arquitectónica, táctica o tecnológica
-8. O permitir al usuario introducir su propio tema.
+2. Un lugar histórico o enigma arqueológico
+3. Un personaje y su dilema moral o caída
+4. Un misterio sin resolver o desaparición histórica
+5. Un true crime histórico
+6. Una conciencia o realidad colectiva ante una crisis
+7. Una manipulación psicológica o política masiva
+8. Una hazaña arquitectónica, táctica o tecnológica
+9. O permitir al usuario introducir su propio tema.
 -> ALTO INQUEBRANTABLE: La IA debe detenerse aquí y esperar la respuesta y confirmación del usuario antes de avanzar. No generes ninguna investigación, guion, clips ni metadata hasta recibir esta confirmación.
 
 ETAPA 2: CREAR PROMPT PARA INVESTIGACIÓN EN OTRO CHAT SEPARADO
@@ -610,7 +613,7 @@ const PromptGenerator = () => {
 
   // Cargar plantilla desde LocalStorage al iniciar
   useEffect(() => {
-    const key = 'huellas_master_template_v68';
+    const key = 'huellas_master_template_v69';
     const savedTemplate = localStorage.getItem(key);
     const initialText = savedTemplate ? savedTemplate : DEFAULT_TEMPLATE.trim();
     setTemplateText(initialText);
@@ -620,7 +623,7 @@ const PromptGenerator = () => {
 
   // Guardar plantilla en LocalStorage MANUALMENTE
   const saveTemplate = () => {
-    const key = 'huellas_master_template_v68';
+    const key = 'huellas_master_template_v69';
     localStorage.setItem(key, templateText);
     alert('✅ Plantilla Base guardada con éxito.');
   };
