@@ -42,15 +42,20 @@ Una vez que el usuario confirme el tema y la tipología, la IA generará y entre
 
 ETAPA 3: GENERACIÓN DE METADATA PARA SUBIR EL VIDEO (ENTREGA POSTERIOR)
 En una interacción posterior, la IA generará la metadata de publicación en formato "Todo Corrido" y SIN encabezados de sección (cero "Título:", cero "Descripción:", cero "Comentario Fijado:"):
-- Título inmersivo directo (sin sufijos de marca ni de IA).
-- Línea invisible (⠀)
-- Descripción densa e histórica de aproximadamente 2100 caracteres.
-- Línea invisible (⠀)
-- Exactamente 5 hashtags en formato #CamelCase.
-- Línea invisible (⠀)
-- Leyenda obligatoria del Escudo de IA.
-- Línea invisible (⠀)
-- Comentario fijado directo (CTA de suscripción/interacción).
+- Regla Estricta de Extensión (2100 Caracteres Totales): Desde el inicio del título hasta el final de los hashtags (incluyendo título, descripción, nota IA, slogan y hashtags con sus espacios y saltos de línea), el bloque completo debe sumar exactamente 2100 caracteres contando los espacios.
+- Regla de Años en Número: Todos los años deben escribirse siempre en números / dígitos (ej. 1888, 1945), jamás en palabras.
+- Estructura y Orden Inalterable de Entrega (Nota IA -> Slogan -> Hashtags):
+  1. Título inmersivo directo (sin sufijos de marca ni de IA), con los años en números.
+  2. Línea invisible con carácter braille (⠀).
+  3. Descripción densa e histórica adaptada al formato vertical (con todos los años en números).
+  4. Línea invisible con carácter braille (⠀).
+  5. Nota IA (Escudo de IA para videos cortos): (Nota: Este video inmersivo ha sido recreado utilizando herramientas de inteligencia artificial generativa basándonos estrictamente en registros históricos, tácticos y arquitectónicos de la época. Es posible que existan incongruencias o errores visuales).
+  6. Línea invisible con carácter braille (⠀).
+  7. Slogan de la marca: Cada historia deja una huella. Aquí seguimos sus rastros.
+  8. Línea invisible con carácter braille (⠀).
+  9. Exactamente 5 hashtags en formato #CamelCase referentes al tema del video (aquí concluye estrictamente el conteo de los 2100 caracteres totales).
+  10. Línea invisible con carácter braille (⠀).
+  11. Comentario fijado directo (CTA de suscripción/interacción sin etiqueta).
 [/?TIPO_PRODUCCION]
 [?TIPO_PRODUCCION=REEL_9X16]
 PROTOCOLO SECUENCIAL DE EJECUCIÓN OBLIGATORIO: REEL 9x16 (5 ETAPAS POR SEPARADO):
@@ -82,8 +87,10 @@ Preséntale opciones sugeridas y dale la opción de indicar cualquier otra durac
 5. 68 segundos (Clip 1 de 4s + 8 clips de 8s = 64s de voz en off / ~1130 caracteres con espacios)
 6. 76 segundos (Clip 1 de 4s + 9 clips de 8s = 72s de voz en off / ~1272 caracteres con espacios)
 7. 84 segundos (Clip 1 de 4s + 10 clips de 8s = 80s de voz en off / ~1413 caracteres con espacios)
-8. 120 segundos / 2 min (Clip 1 de 4s + 116s de voz en off = 2049 caracteres con espacios exactos)
-9. O especificar cualquier otra duración en segundos que el usuario prefiera.
+8. 116 segundos / 1:56 min (Clip 1 de 4s + 14 clips de 8s = 112s de voz en off / ~1978 caracteres con espacios)
+9. 120 segundos / 2 min exactos (Clip 1 de 4s + 14 clips de 8s + Clip 16 de 4s = 116s de voz en off / 2049 caracteres con espacios exactos)
+10. 124 segundos / 2:04 min (Clip 1 de 4s + 15 clips de 8s = 120s de voz en off / ~2119 caracteres con espacios)
+11. O especificar cualquier otra duración en segundos que el usuario prefiera.
 -> ALTO INQUEBRANTABLE: La IA debe detenerse aquí y esperar a que el usuario indique la duración elegida antes de redactar el guion de locución.
 
 ETAPA 3: GUION DE LA VOZ EN OFF (CALCULADA SEGÚN LA DURACIÓN)
@@ -96,6 +103,7 @@ Una vez confirmada la duración por el usuario, la IA redactará EXCLUSIVAMENTE 
     Caracteres del Guion = (Duración Total del Video - 4s) x 17.66 caracteres con espacios.
     (Ejemplos exactos: 120s total -> 116s de voz = 2049 caracteres con espacios; 60s total -> 56s de voz = ~989 caracteres; 52s total -> 48s de voz = ~848 caracteres; 44s total -> 40s de voz = ~707 caracteres; 36s total -> 32s de voz = ~565 caracteres). La IA debe indicar obligatoriamente al pie del guion el recuento exacto de caracteres generados y el desglose de tiempo.
 - Hook de Inicio Obligatorio (en Clip 2): El preámbulo inicial de la narración (que entra con el Clip 2) tiene que generar un hook demoledor; los primeros segundos de locución deben capturar al consumidor con algo profundamente intrigante o terrorífico. DEBE EMPEZAR OBLIGATORIAMENTE POR LA FECHA Y LUEGO EL LUGAR (ej: "1888, Londres...", "Invierno de 1789, París...", "Mayo de 1943, en las profundidades del Mar del Norte..."), seguido inmediatamente por el suceso perturbador, el misterio o la revelación que detenga el scroll al instante.
+- Regla Estricta de Años en Número: Todos los años deben escribirse obligatoriamente en números / dígitos (ej. 1888, 1789, 1943), quedando totalmente prohibido escribirlos en letras o palabras completas (prohibido escribir "mil ochocientos ochenta y ocho"). Esta norma rige tanto para la fecha de apertura como para cualquier año mencionado en el guion y en la metadata.
 - Tono documental inmersivo, periodístico, sobrio y cinematográfico.
 - Sin silencios estructurales: Queda terminantemente prohibido incluir silencios estructurales o marcas de pausas artificiales (/2s, /#s). La voz en off debe fluir continua y limpia a lo largo de todo su tiempo asignado.
 - Voz narrativa en tercera persona (Prohibido hablar en "nosotros"): La voz en off no debe hablar en primera persona del plural ("nosotros", "caminamos", "vemos", "nos encontramos", "nuestra historia"). La locución debe limitarse a narrar los hechos y la historia de forma directa, objetiva y cinematográfica en tercera persona.
@@ -106,10 +114,14 @@ Una vez confirmada la duración por el usuario, la IA redactará EXCLUSIVAMENTE 
 
 ETAPA 4: PROMPTS DE IMÁGENES INICIALES Y CLIPS DE VIDEO
 Tras la validación del guion de voz en off, la IA generará y entregará los clips de video correspondientes a la duración elegida:
-- Cantidad de Clips:
+- Cantidad de Clips y Cuadre Matemático Exacto:
   * Clip 1: 4 segundos de duración (Hook de impacto visual y auditivo). Estrictamente SIN voz en off.
-  * Clips 2 en adelante: 8 segundos de duración cada uno (cubiertos por la voz en off). Cantidad de clips de 8s = (Duración Total - 4s) / 8s.
-  (La suma de los 4s del Clip 1 más los clips de 8s debe dar exactamente la duración total acordada con el usuario).
+  * Clips subsiguientes: Normalmente de 8 segundos cada uno (cubiertos por la voz en off continua).
+  * Regla Inquebrantable de Cuadre Total: La suma exacta de los segundos de todos los clips generados DEBE coincidir con precisión milimétrica con la duración total acordada con el usuario, sin que falte ni sobre un solo segundo:
+    - Si el usuario acordó 120 segundos (2 min exactos): La IA generará obligatoriamente Clip 1 (4s) + 14 clips de 8s (112s) + Clip 16 final de 4s (cierre/outro con plano macro de huella o cierre) = 120s exactos (4 + 112 + 4 = 120s). ¡Queda terminantemente prohibido redondear hacia abajo a 14 clips y dejar el video incompleto en 116 segundos!
+    - Si el usuario acordó 116 segundos (1:56 min): Se generará Clip 1 (4s) + 14 clips de 8s (112s) = 116s exactos.
+    - Si el usuario acordó 60 segundos (1 min): Se generará Clip 1 (4s) + 7 clips de 8s (56s) = 60s exactos.
+    - Para cualquier otra duración personalizada, si (Duración Total - 4s) no es múltiplo exacto de 8, la IA añadirá un clip final con los segundos exactos restantes para completar la duración solicitada sin faltantes.
 
 Para cada uno de los clips, la IA entregará de forma clara y estructurada:
 1. Identificación del Clip y Selección de Cámara: Plano vertical centrado (center-framed), angulación, movimiento cinético lento y óptica seleccionados de los catálogos.
@@ -120,15 +132,23 @@ Para cada uno de los clips, la IA entregará de forma clara y estructurada:
 
 ETAPA 5: METADATA PARA SUBIR EL VIDEO (ENTREGA POSTERIOR)
 En una interacción posterior, la IA generará la metadata de publicación en formato "Todo Corrido" y SIN encabezados de sección (cero "Título:", cero "Descripción:", cero "Comentario Fijado:"):
-- Título inmersivo y directo para formato vertical, terminando con un separador "|" y una palabra clave corta (sin sufijo de IA ni "| Huellas de la Humanidad").
-- Línea invisible (⠀)
-- Descripción densa, contextual y envolvente adaptada a formato vertical (~2100 caracteres).
-- Línea invisible (⠀)
-- Exactamente 5 hashtags en formato #CamelCase referentes al tema del video.
-- Línea invisible (⠀)
-- Leyenda obligatoria del Escudo de IA para videos cortos.
-- Línea invisible (⠀)
-- Comentario fijado directo (CTA de suscripción/interacción sin etiqueta).
+- Regla Estricta de Extensión (2100 Caracteres Totales): Desde el inicio del título hasta el final de los hashtags (incluyendo título, descripción, nota IA, slogan y hashtags con sus espacios y saltos de línea), el bloque completo debe sumar exactamente 2100 caracteres contando los espacios. La IA debe calibrar la longitud de la descripción para cumplir con esta cifra matemática exacta.
+- Regla de Años en Número: Todos los años deben escribirse siempre en número (dígitos, ej: 1888, 1945), nunca en letras.
+- Estructura y Orden Inalterable de Entrega (Nota IA -> Slogan -> Hashtags):
+  1. Título inmersivo y directo para formato vertical (con los años en números), terminando con un separador "|" y una palabra clave corta (sin sufijo de IA ni "| Huellas de la Humanidad").
+  2. Línea invisible con carácter braille (⠀).
+  3. Descripción densa, contextual y envolvente adaptada a formato vertical (con todos los años en números).
+  4. Línea invisible con carácter braille (⠀).
+  5. Nota IA (Escudo de IA obligatorio para videos cortos):
+     (Nota: Este video inmersivo ha sido recreado utilizando herramientas de inteligencia artificial generativa basándonos estrictamente en registros históricos, tácticos y arquitectónicos de la época. Es posible que existan incongruencias o errores visuales).
+  6. Línea invisible con carácter braille (⠀).
+  7. Slogan de la marca:
+     Cada historia deja una huella. Aquí seguimos sus rastros.
+  8. Línea invisible con carácter braille (⠀).
+  9. Exactamente 5 hashtags en español y formato #CamelCase referentes al tema del video.
+     (Aquí concluye estrictamente el conteo de los 2100 caracteres totales).
+  10. Línea invisible con carácter braille (⠀).
+  11. Comentario fijado directo (CTA de suscripción/interacción sin etiqueta).
 [/?TIPO_PRODUCCION]
 [?TIPO_PRODUCCION=PRINCIPAL_16_9]
 PROTOCOLO SECUENCIAL DE EJECUCIÓN OBLIGATORIO: PRINCIPAL 16:9 (7 ETAPAS POR SEPARADO):
@@ -274,6 +294,7 @@ Prohibición Absoluta de Menores: Está terminantemente prohibido incluir niños
 Prohibición Total de la Palabra "Adulto": Queda terminantemente prohibido escribir las palabras "adulto", "adultos", "adult", "adults" en cualquier guion, descripción o prompt. Es redundante, innecesario y antiestético. La identidad y presencia de los personajes debe expresarse únicamente a través de sus oficios, roles o descripciones contextuales (ej. soldado, campesino, mujer, hombre, pescador, herrero, monje), sin etiquetarlos jamás como "adultos".
 Prohibición de Anonimización Forzada: No es necesario decir "x tipo de persona o profesión anónimos" (ej. "campesinos anónimos", "un marinero anónimo", "soldados anónimos") ni recurrir a etiquetas artificiales para intentar anonimizar a las personas de la historia. Las personas, figuras y grupos deben mencionarse de forma orgánica y directa según el contexto histórico (ej. los campesinos, los monjes, el emperador, una mujer, los soldados), sin obligar al guion a calificarlos como "anónimos".
 Prohibición de Lenguaje Violento Explícito: Por políticas estrictas de monetización algorítmica, queda terminantemente prohibido utilizar en los guiones palabras como "matar", "asesinar", "suicidar", "masacrar" o sus derivados. Para describir bajas históricas, la IA está obligada a utilizar eufemismos y lenguaje periodístico refinado (ej. "perdió la vida", "cayó en combate", "fue ejecutado", "pereció", "silenciado", "erradicado").
+Regla Estricta de Años en Número: Todos los años deben escribirse obligatoriamente en números / dígitos (ej. 1888, 1789, 1943, 44 a.C.), quedando estrictamente prohibido escribirlos en letras o palabras (prohibido escribir "mil ochocientos ochenta y ocho"). Esta norma es universal para todo el ecosistema de Huellas de la Humanidad: aplica a los títulos, anclajes de fecha, guiones de locución TTS, textos en pantalla de CapCut, miniaturas, descripciones y metadata.
 [?TIPO_PRODUCCION=PRINCIPAL_16_9|REEL_9X16|TIMELAPSE]
 Regla de Cero Exclamaciones para el Motor TTS: En la redacción del guion final que será procesado por sistemas de Text-To-Speech (TTS) o interpretado por locutores, está totalmente prohibido el uso de signos de exclamación (!). La intensidad emocional, el drama y la urgencia de la historia no deben forzarse mediante gritos artificiales o entonaciones hiperbólicas. La gravedad narrativa se controla de forma exclusiva a través de la sobriedad vocal, el ritmo de lectura, la contención emocional, los silencios estructurales y el peso intrínseco de las palabras elegidas. La voz debe transmitir autoridad sin arrogancia y asombro sin melodrama.
 [/?TIPO_PRODUCCION]
@@ -484,7 +505,7 @@ Anclaje Visual al Eslogan y Cierre (Dualidad de Formatos):
   4) Visualización Referencial (Cero Pantallas Negras): Los clips visuales asignados a los segmentos de estos eslóganes NO deben ser pantallas oscuras. Tienen que ser descritos como escenas inmersivas que hagan referencia a la historia. Específicamente para la marca auditiva final ("Cada historia deja una huella..."), el montaje tiene la obligación estricta de empalmar esta frase con un plano detalle (macro shot) de altísima textura que evidencie una marca física real en el entorno (ej. una pisada profunda en ceniza volcánica, un cincelado en arenisca o el óxido en un cobre abandonado).
 [/?TIPO_PRODUCCION]
 [?TIPO_PRODUCCION=REEL_9X16|TIMELAPSE|REELS_16_SEG]
-- Para el Entregable Promocional (Vertical 9:16): Queda estrictamente prohibida la inclusión del eslogan del canal en los videos cortos. El relato debe culminar sin esta marca auditiva para maximizar la velocidad de consumo y evitar fugas de retención. Además, está expresamente prohibido incluir el logo del canal al final del metraje (sin logo al final de los Reels).
+- Para el Entregable Promocional (Vertical 9:16): En la pista de audio / locución del video, queda estrictamente prohibida la locución del eslogan para maximizar la velocidad de consumo y evitar fugas de retención (sin logo al final de los Reels). Sin embargo, en la METADATA de publicación (texto de la descripción), el eslogan SÍ se incluye de forma obligatoria ubicado inmediatamente después de la Nota IA y antes de los hashtags ("Cada historia deja una huella. Aquí seguimos sus rastros.").
 [/?TIPO_PRODUCCION]
 
 VOLUMEN VII: EMPAQUE, SEO Y DISTRIBUCIÓN ALGORÍTMICA
@@ -500,9 +521,13 @@ Todo título generado para documentales horizontales debe finalizar obligatoriam
 Los títulos para videos verticales y promocionales deben finalizar con un separador vertical "|" seguido de una palabra o frase muy corta y referente al tema (ej. " | Historia", " | Roma", " | Misterio"). Queda estrictamente prohibido utilizar "(Reconstrucción con IA)".
 [/?TIPO_PRODUCCION]
 Prohibición Absoluta de Encabezados y Subtítulos de Sección: Elimina de forma absoluta TODOS los encabezados, etiquetas y subtítulos de sección (Queda terminantemente prohibido escribir "Título:", "Descripción:", "Hashtags:", "Comentario Fijado:", etc.). Ningún texto debe llevar una etiqueta identificativa antes de su contenido. La redacción de la metadata debe aplicar el sistema "Todo Corrido": un flujo limpio, continuo y orgánico. Para separar cada bloque lógico de metadata, se debe dejar una línea en blanco utilizando obligatoriamente el carácter de espacio invisible braille (⠀) para forzar el salto de línea en las plataformas.
-[?TIPO_PRODUCCION=REELS_16_SEG|INMERSIVO_CONTEMPLATIVO]
-Regla de Descripción Larga (Retención Textual): Al carecer de voz en off, el texto de la descripción asume el peso narrativo. La descripción (metadata) generada debe ser densa, rica en contexto histórico y tener una extensión estricta de aproximadamente 2100 caracteres.
+
+[?TIPO_PRODUCCION=REEL_9X16|TIMELAPSE|REELS_16_SEG|INMERSIVO_CONTEMPLATIVO]
+Regla Estricta de Extensión (2100 Caracteres Totales desde el Título hasta los Hashtags):
+En todos los formatos verticales / promocionales, el bloque de publicación medido de forma continua e ininterrumpida DESDE el inicio del título HASTA el final de los hashtags (incluyendo título, descripción, nota IA, slogan y hashtags, con todos sus espacios y líneas de salto braille) debe sumar exactamente 2100 caracteres contando los espacios. La IA debe graduar la densidad y extensión de la descripción para que todo el conjunto alcance matemáticamente los 2100 caracteres.
 [/?TIPO_PRODUCCION]
+
+Regla Estricta de Años en Número en la Metadata: Todos los años mencionados en el título y en la descripción deben escribirse invariablemente en formato numérico (dígitos, ej: 1888, 1943), jamás en palabras o letras.
 
 Regla de Capítulos según Destino de Publicación:
 [?TIPO_PRODUCCION=PRINCIPAL_16_9]
@@ -522,18 +547,41 @@ Como medida de protección comunitaria frente a detractores y políticas de revi
 (Nota: Este video inmersivo ha sido recreado utilizando herramientas de inteligencia artificial generativa basándonos estrictamente en registros históricos, tácticos y arquitectónicos de la época. Es posible que existan incongruencias o errores visuales).
 [/?TIPO_PRODUCCION]
 
-4. Hashtags y Comentario Fijado (Orden Estricto):
-[?TIPO_PRODUCCION=PRINCIPAL_16_9]
-Límite Estricto de Hashtags (Horizontales): La descripción principal concluirá con exactamente 5 hashtags (en español, formato #CamelCase), ni uno más, ni uno menos. Los dos primeros hashtags son obligatorios e inamovibles: #DocumentalEnEspañol y #AmantesDeLaHistoria. Los otros 3 hashtags deben ser creados referentes al tema específico del video.
-[/?TIPO_PRODUCCION]
+4. Orden Secuencial del Empaque y Hashtags (Nota IA -> Slogan -> Hashtags):
+Para salvaguardar la presentación y el rendimiento algorítmico, los bloques de metadata deben entregarse en este orden riguroso:
 [?TIPO_PRODUCCION=REEL_9X16|TIMELAPSE|REELS_16_SEG|INMERSIVO_CONTEMPLATIVO]
-Límite Estricto de Hashtags (Verticales/Promocionales/Reels): La descripción principal concluirá con exactamente 5 hashtags (en español, formato #CamelCase) referentes al tema del video, ni uno más, ni uno menos.
+1) Título inmersivo (con los años en números)
+   (⠀)
+2) Descripción envolvente (con los años en números)
+   (⠀)
+3) Nota IA (Escudo de IA obligatorio)
+   (⠀)
+4) Slogan oficial de la marca: "Cada historia deja una huella. Aquí seguimos sus rastros."
+   (⠀)
+5) Hashtags: Exactamente 5 hashtags en español y formato #CamelCase referentes al tema del video. (Con los hashtags concluye estrictamente la contabilización de los 2100 caracteres totales).
+   (⠀)
+6) Comentario Fijado: Directo (CTA de interacción), sin etiqueta.
+[/?TIPO_PRODUCCION]
+[?TIPO_PRODUCCION=PRINCIPAL_16_9]
+1) Título | Documental Completo
+   (⠀)
+2) Descripción densa
+   (⠀)
+3) Capítulos (10 timestamps)
+   (⠀)
+4) Nota IA (Escudo de IA)
+   (⠀)
+5) Slogan oficial de la marca: "Cada historia deja una huella. Aquí seguimos sus rastros."
+   (⠀)
+6) Hashtags: Exactamente 5 hashtags (#DocumentalEnEspañol, #AmantesDeLaHistoria, más 3 temáticos).
+   (⠀)
+7) Comentario Fijado: Directo, sin etiqueta.
 [/?TIPO_PRODUCCION]
 Comentario Fijado: El Comentario Fijado (CTA y enlaces) es obligatoriamente lo último que debe aparecer en la estructura del documento del empaque, cerrando la entrega (sin la palabra "Comentario Fijado:", solo el texto directo del mensaje).
 
 VOLUMEN VIII: AUDITORÍA DE ÉLITE Y CONTROL DE CALIDAD
 Capítulo 18: Checklist de Control de Calidad Final (QA)
-La publicación de un documento de Huellas de la Humanidad es irreversible. Antes de presionar el botón de exportación y programar el video en la plataforma, el Director Ejecutivo, el Editor o el Arquitecto de Sistemas Audiovisuales debe confrontar el metraje final contra el siguiente escrutinio inflexible. Un solo fallo en este checklist implica la retención del episodio y la re-ingeniería del bloque defectuoso :[ ] 1. Contradicción Central: ¿La tensión histórica o paradoja planteada en el inicio permea de manera constante hasta la resolución del documental?[ ] 2. Promesa Narrativa: ¿El enigma, revelación o experiencia prometida antes del minuto 02:00 fue resuelta y entregada plenamente al espectador?[ ] 3. Filtro de Realidad (Anacronismos): ¿Se ha auditado visualmente cada plano para garantizar la inexistencia total de prendas, objetos de cristal moderno, arquitectura incoherente o tecnología anacrónica?[ ] 4. Auditoría Anti-Estancamiento (Planos): ¿Se ha verificado que ningún tipo de plano (ej. Drone reveal) se repita idénticamente en el rango cercano de los últimos 6 a 8 clips?[ ] 5. Auditoría Anti-Estancamiento (Cámara): ¿Se ha constatado que el mismo movimiento de cámara no se encadena consecutivamente sin una justificación narrativa extrema?[ ] 6. Continuidad Ambiental: ¿Las transiciones entre clips mantienen una coherencia impecable en el uso del catálogo de iluminación, la materialidad de las ruinas y la textura del espacio?[ ] 7. Sinergia de Miniatura: ¿La miniatura gráfica proyecta una emoción dominante que intriga y que es complementaria (jamás repetitiva) respecto al título del video?[ ] 8. Contención de Hashtags: ¿El bloque final de la descripción contiene un recuento estricto y exacto de cinco (5) hashtags?[ ] 9. Formato "Todo Corrido": ¿La descripción de la plataforma fluye orgánicamente sin el uso de subtítulos burocráticos ni encabezados ("Título:", "Descripción:"), separada únicamente por una línea de retorno de carro con braille (⠀) entre bloques?[ ] 10. Acoplamiento del Eslogan: ¿La pronunciación final del lema de la marca coincide milimétricamente con un plano de hipertextura que muestre una huella, rastro o marca física en un material histórico?[ ] 11. Sincronización Inversa Perfecta y Cero Marcas de Pausas: ¿La cadencia de la locución humana concuerda rítmicamente con los impactos visuales, entregando el guion completamente limpio y continuo sin marcas de pausas artificiales (/2s, /#s) para ser colocadas manualmente en edición, con clips de 10s (o shots de 5s) en Principal 16:9, y cumpliendo en Reel 9x16 con la fórmula de caracteres proporcionales (Duración Total - 4s de Clip 1 sin voz) x 17.66 caracteres con espacios (benchmark empírico: 116s de locución = 2049 caracteres)?[ ] 12. Arquitectura de Audio y Hook de Inicio (Reel 9x16): ¿Se ha verificado que el Clip 1 (4s) carezca de voz en off (exclusivo Foley de impacto) y que la locución arranque en el Clip 2 comenzando obligatoriamente con la FECHA y luego el LUGAR con premisa intrigante o terrorífica? ¿La voz en off relata en tercera persona sin hablar jamás en "nosotros", y se nombran las figuras históricas con naturalidad sin forzar etiquetas como "anónimos"?[ ] 13. Nomenclatura de Entrada de Prompts: ¿Todos los prompts de imagen inicial arrancan obligatoriamente con "Imagen clip [número]" y todos los prompts de clips de video con "Clip [número]"?[ ] 14. Regla Estricta de Cero Música: ¿Se ha verificado que ningún clip de ningún tipo de video contenga música, melodías o pistas sonoras de fondo, garantizando que el diseño acústico de cada clip sea exclusivamente Foley ambiental con 'no music'?[ ] 15. Instrucción de Rol Universal: ¿El prompt comienza obligatoriamente con "Actúa como un historiador, director de cine, y periodista profesional." para todos los tipos de video?
+La publicación de un documento de Huellas de la Humanidad es irreversible. Antes de presionar el botón de exportación y programar el video en la plataforma, el Director Ejecutivo, el Editor o el Arquitecto de Sistemas Audiovisuales debe confrontar el metraje final contra el siguiente escrutinio inflexible. Un solo fallo en este checklist implica la retención del episodio y la re-ingeniería del bloque defectuoso :[ ] 1. Contradicción Central: ¿La tensión histórica o paradoja planteada en el inicio permea de manera constante hasta la resolución del documental?[ ] 2. Promesa Narrativa: ¿El enigma, revelación o experiencia prometida antes del minuto 02:00 fue resuelta y entregada plenamente al espectador?[ ] 3. Filtro de Realidad (Anacronismos): ¿Se ha auditado visualmente cada plano para garantizar la inexistencia total de prendas, objetos de cristal moderno, arquitectura incoherente o tecnología anacrónica?[ ] 4. Auditoría Anti-Estancamiento (Planos): ¿Se ha verificado que ningún tipo de plano (ej. Drone reveal) se repita idénticamente en el rango cercano de los últimos 6 a 8 clips?[ ] 5. Auditoría Anti-Estancamiento (Cámara): ¿Se ha constatado que el mismo movimiento de cámara no se encadena consecutivamente sin una justificación narrativa extrema?[ ] 6. Continuidad Ambiental: ¿Las transiciones entre clips mantienen una coherencia impecable en el uso del catálogo de iluminación, la materialidad de las ruinas y la textura del espacio?[ ] 7. Sinergia de Miniatura: ¿La miniatura gráfica proyecta una emoción dominante que intriga y que es complementaria (jamás repetitiva) respecto al título del video?[ ] 8. Contención de Hashtags: ¿El bloque final de la descripción contiene un recuento estricto y exacto de cinco (5) hashtags?[ ] 9. Formato "Todo Corrido": ¿La descripción de la plataforma fluye orgánicamente sin el uso de subtítulos burocráticos ni encabezados ("Título:", "Descripción:"), separada únicamente por una línea de retorno de carro con braille (⠀) entre bloques?[ ] 10. Acoplamiento del Eslogan: ¿La pronunciación final del lema de la marca coincide milimétricamente con un plano de hipertextura que muestre una huella, rastro o marca física en un material histórico?[ ] 11. Sincronización Inversa Perfecta y Cero Marcas de Pausas: ¿La cadencia de la locución humana concuerda rítmicamente con los impactos visuales, entregando el guion completamente limpio y continuo sin marcas de pausas artificiales (/2s, /#s) para ser colocadas manualmente en edición, con clips de 10s (o shots de 5s) en Principal 16:9, y cumpliendo en Reel 9x16 con la fórmula de caracteres proporcionales (Duración Total - 4s de Clip 1 sin voz) x 17.66 caracteres con espacios (benchmark empírico: 116s de locución = 2049 caracteres)?[ ] 12. Arquitectura de Audio y Hook de Inicio (Reel 9x16): ¿Se ha verificado que el Clip 1 (4s) carezca de voz en off (exclusivo Foley de impacto) y que la locución arranque en el Clip 2 comenzando obligatoriamente con la FECHA y luego el LUGAR con premisa intrigante o terrorífica? ¿La voz en off relata en tercera persona sin hablar jamás en "nosotros", y se nombran las figuras históricas con naturalidad sin forzar etiquetas como "anónimos"?[ ] 13. Nomenclatura de Entrada de Prompts: ¿Todos los prompts de imagen inicial arrancan obligatoriamente con "Imagen clip [número]" y todos los prompts de clips de video con "Clip [número]"?[ ] 14. Regla Estricta de Cero Música: ¿Se ha verificado que ningún clip de ningún tipo de video contenga música, melodías o pistas sonoras de fondo, garantizando que el diseño acústico de cada clip sea exclusivamente Foley ambiental con 'no music'?[ ] 15. Instrucción de Rol Universal: ¿El prompt comienza obligatoriamente con "Actúa como un historiador, director de cine, y periodista profesional." para todos los tipos de video?[ ] 16. Años en Número (Cero Letras): ¿Todos los años en el título, anclajes de fecha, guion de locución y metadata están escritos estrictamente en dígitos numéricos (ej. 1888, 1943) sin haber sido escritos en palabras?[ ] 17. Orden y Extensión de Metadata (2100 Caracteres): ¿En formato vertical, el bloque desde el título hasta los hashtags suma exactamente 2100 caracteres con espacios, y sigue el orden estricto: Título -> Descripción -> Nota IA -> Slogan -> Hashtags -> Comentario Fijado?[ ] 18. Cuadre Matemático de Clips (Reel 9x16): ¿La suma exacta de segundos de todos los clips coincide milimétricamente con la duración acordada (ej. 120s = 4s de Hook + 14 clips de 8s [112s] + Clip 16 de 4s [cierre] = 120s exactos) sin omitir ningún segundo?
 
 Este Manual Maestro de Producción no es un compendio de sugerencias; es el código genético inalterable que estructura el núcleo de Huellas de la Humanidad. Su ejecución meticulosa es el único mecanismo validado capaz de transformar simples secuencias algorítmicas en la reconstrucción viviente de nuestro pasado colectivo.
 `;
@@ -562,7 +610,7 @@ const PromptGenerator = () => {
 
   // Cargar plantilla desde LocalStorage al iniciar
   useEffect(() => {
-    const key = 'huellas_master_template_v67';
+    const key = 'huellas_master_template_v68';
     const savedTemplate = localStorage.getItem(key);
     const initialText = savedTemplate ? savedTemplate : DEFAULT_TEMPLATE.trim();
     setTemplateText(initialText);
@@ -572,7 +620,7 @@ const PromptGenerator = () => {
 
   // Guardar plantilla en LocalStorage MANUALMENTE
   const saveTemplate = () => {
-    const key = 'huellas_master_template_v67';
+    const key = 'huellas_master_template_v68';
     localStorage.setItem(key, templateText);
     alert('✅ Plantilla Base guardada con éxito.');
   };
