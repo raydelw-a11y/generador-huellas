@@ -614,7 +614,10 @@ const PromptGenerator = () => {
   const [historyIndex, setHistoryIndex] = useState(-1);
   const [templateText, setTemplateText] = useState('');
   
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    SUB_OPCION_REELS: '16X9',
+    OPCION_TEXTO_PANTALLA: 'IA_CLIP_1',
+  });
 
   // Sincronizar tema con el DOM
   useEffect(() => {
@@ -628,7 +631,7 @@ const PromptGenerator = () => {
 
   // Cargar plantilla desde LocalStorage al iniciar
   useEffect(() => {
-    const key = 'huellas_master_template_v102';
+    const key = 'huellas_master_template_v103';
     const savedTemplate = localStorage.getItem(key);
     const initialText = savedTemplate ? savedTemplate : DEFAULT_TEMPLATE.trim();
     setTemplateText(initialText);
@@ -638,7 +641,7 @@ const PromptGenerator = () => {
 
   // Guardar plantilla en LocalStorage MANUALMENTE
   const saveTemplate = () => {
-    const key = 'huellas_master_template_v102';
+    const key = 'huellas_master_template_v103';
     localStorage.setItem(key, templateText);
     alert('✅ Plantilla Base guardada con éxito.');
   };
@@ -715,14 +718,14 @@ const PromptGenerator = () => {
           return (idxA === -1 ? 99 : idxA) - (idxB === -1 ? 99 : idxB);
         });
       } else if (k === 'SUB_OPCION_REELS') {
-        const order = ['9X16', '16X9'];
+        const order = ['16X9', '9X16'];
         arr.sort((a, b) => {
           const idxA = order.indexOf(a);
           const idxB = order.indexOf(b);
           return (idxA === -1 ? 99 : idxA) - (idxB === -1 ? 99 : idxB);
         });
       } else if (k === 'OPCION_TEXTO_PANTALLA') {
-        const order = ['CAPCUT_MANUAL', 'IA_CLIP_1'];
+        const order = ['IA_CLIP_1', 'CAPCUT_MANUAL'];
         arr.sort((a, b) => {
           const idxA = order.indexOf(a);
           const idxB = order.indexOf(b);
@@ -738,13 +741,19 @@ const PromptGenerator = () => {
     };
   }, [templateText]);
 
-  // Inicializar formData con el primer valor de cada radio group
+  // Inicializar formData con los valores por defecto
   useEffect(() => {
     setFormData(prev => {
+      const defaults = {
+        SUB_OPCION_REELS: '16X9',
+        OPCION_TEXTO_PANTALLA: 'IA_CLIP_1',
+      };
       const newData = { ...prev };
       Object.keys(radioGroups).forEach(group => {
         if (!newData[group] && radioGroups[group].length > 0) {
-          newData[group] = radioGroups[group][0];
+          newData[group] = defaults[group] && radioGroups[group].includes(defaults[group])
+            ? defaults[group]
+            : radioGroups[group][0];
         }
       });
       return newData;
