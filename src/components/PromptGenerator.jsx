@@ -1354,21 +1354,28 @@ const PromptGenerator = () => {
 
                       {group === 'OPCION_TEXTO_PANTALLA' && (
                         <div style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: '0.75rem',
-                          marginTop: '0.6rem',
-                          marginBottom: '0.75rem',
-                          padding: '0.6rem 0.8rem',
-                          backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                          marginTop: '0.75rem',
+                          marginBottom: '1rem',
+                          padding: '0.85rem 1rem',
+                          backgroundColor: 'var(--box-bg)',
                           borderRadius: '6px',
-                          border: '1px solid var(--border-color)',
-                          flexWrap: 'wrap'
+                          border: '1.5px solid var(--accent-gold)',
+                          boxShadow: '0 2px 8px var(--shadow-color)'
                         }}>
-                          <label htmlFor="duracion_clip_1_input" style={{ fontWeight: 600, fontSize: '0.9rem', color: 'var(--accent-gold)', margin: 0, cursor: 'pointer' }}>
-                            Duración del primer clip (segundos):
+                          <label 
+                            htmlFor="duracion_clip_1_input" 
+                            style={{ 
+                              display: 'block', 
+                              fontWeight: 700, 
+                              fontSize: '0.95rem', 
+                              color: 'var(--accent-gold)', 
+                              marginBottom: '0.5rem', 
+                              cursor: 'pointer' 
+                            }}
+                          >
+                            ⏱️ Campo de Texto - Duración del Primer Clip (en segundos):
                           </label>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
                             <button
                               type="button"
                               onClick={() => {
@@ -1378,19 +1385,20 @@ const PromptGenerator = () => {
                                 }
                               }}
                               style={{
-                                width: '28px',
-                                height: '28px',
+                                width: '36px',
+                                height: '38px',
                                 padding: 0,
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 borderRadius: '4px',
                                 border: '1px solid var(--border-color)',
-                                backgroundColor: 'rgba(255,255,255,0.1)',
-                                color: 'var(--text-color)',
+                                backgroundColor: 'var(--paper-color)',
+                                color: 'var(--text-primary)',
                                 cursor: 'pointer',
                                 fontWeight: 'bold',
-                                fontSize: '1rem'
+                                fontSize: '1.2rem',
+                                transition: 'all 0.2s'
                               }}
                               title="Disminuir 1 segundo"
                             >
@@ -1399,6 +1407,7 @@ const PromptGenerator = () => {
                             <input
                               id="duracion_clip_1_input"
                               type="number"
+                              className="form-control"
                               name="DURACION_CLIP_1"
                               min="1"
                               max="60"
@@ -1407,16 +1416,17 @@ const PromptGenerator = () => {
                                 const val = e.target.value;
                                 setFormData(prev => ({ ...prev, DURACION_CLIP_1: val }));
                               }}
+                              placeholder="4"
                               style={{
-                                width: '70px',
-                                padding: '0.35rem 0.5rem',
+                                width: '100px',
+                                padding: '0.45rem 0.6rem',
                                 borderRadius: '4px',
-                                border: '1px solid var(--accent-gold)',
-                                backgroundColor: 'var(--bg-input, #1e1e1e)',
-                                color: 'var(--text-color, #fff)',
+                                border: '1.5px solid var(--accent-gold)',
+                                backgroundColor: 'var(--focus-bg)',
+                                color: 'var(--text-primary)',
                                 fontWeight: 'bold',
                                 textAlign: 'center',
-                                fontSize: '1rem'
+                                fontSize: '1.15rem'
                               }}
                             />
                             <button
@@ -1426,28 +1436,29 @@ const PromptGenerator = () => {
                                 setFormData(prev => ({ ...prev, DURACION_CLIP_1: String(current + 1) }));
                               }}
                               style={{
-                                width: '28px',
-                                height: '28px',
+                                width: '36px',
+                                height: '38px',
                                 padding: 0,
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 borderRadius: '4px',
                                 border: '1px solid var(--border-color)',
-                                backgroundColor: 'rgba(255,255,255,0.1)',
-                                color: 'var(--text-color)',
+                                backgroundColor: 'var(--paper-color)',
+                                color: 'var(--text-primary)',
                                 cursor: 'pointer',
                                 fontWeight: 'bold',
-                                fontSize: '1rem'
+                                fontSize: '1.2rem',
+                                transition: 'all 0.2s'
                               }}
                               title="Aumentar 1 segundo"
                             >
                               +
                             </button>
+                            <span style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text-primary)', marginLeft: '0.25rem' }}>
+                              segundos (Teclea aquí el número)
+                            </span>
                           </div>
-                          <span style={{ fontSize: '0.85rem', opacity: 0.8, color: 'var(--text-color)' }}>
-                            segundos
-                          </span>
                         </div>
                       )}
 
